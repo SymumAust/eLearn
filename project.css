@@ -1,3 +1,14 @@
 .head1{
 	color: blue;
+	font-size: xx-large;
+	align-content: center;
+	margin-left: 0px;
+	text-align: center;
+	font-size: 80px;
+	text-decoration: overline;
+}
+
+*{
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
 }
