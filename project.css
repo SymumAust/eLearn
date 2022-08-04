@@ -16,3 +16,12 @@
 	background-repeat: no-repeat;
 
 }
+
+.navActive{
+	
+}
+
+#navActive{
+		color: blue;
+		font-size: 200px;
+}
