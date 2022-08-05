@@ -24,31 +24,29 @@
 
 					<link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
 
-				</head>
-				<body>
+						<div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
 
 
-					<div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
-
-						
-						<div class="col-md-4 ">
-							
-							
-							<nav class="navbar navbar-light ">
-								<div class="container-fluid">
-									<a class="navbar-brand" href="#">
-										<img src="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
-										 eLearn</b>
-									</a>
-								</div>
-							</nav>
 
 
-						</div>
-						<div class="col-md-8" style="padding-left: 400px;">
+							<div class="col-md-4 ">
 
 
-							<nav id="navbarRight" class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
+								<nav class="navbar navbar-light ">
+									<div class="container-fluid">
+										<a class="navbar-brand" href="#">
+											<img src="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
+											eLearn</b>
+										</a>
+									</div>
+								</nav>
+
+
+							</div>
+							<div class="col-md-8" style="padding-left: 400px;">
+
+
+								<nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
 								<div class="container-fluid">
 									<a class="navbar-brand" href="#"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
 									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +55,7 @@
 									<div class="collapse navbar-collapse" id="navbarNav">
 										<ul class="navbar-nav">
 											<li class="nav-item">
-												<a class="nav-link " aria-current="page" href="#" style="color: #7bb2e3;"><b>Home</b></a>
+												<a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b>Home</b></a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
@@ -66,25 +64,40 @@
 												<a class="nav-link" href="#" style="color: #7bb2e3"><b>About</b></a>
 											</li>
 
-												<li class="nav-item">
+											<li class="nav-item">
 												<a class="nav-link" href="#" style="color: #7bb2e3"><b>Contact</b></a>
 											</li>
 
-												<li class="nav-item">
+											<li class="nav-item">
 												<a class="nav-link" href="#" style="color: #7bb2e3"><b>Login</b></a>
 											</li>
 											
 										</ul>
 									</div>
-									</nav>
-								</div>
-							
-					</div>
-				<!--	<h1 class="head1">eLearn</h1> -->
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+								</nav>
+							</div>
 
-        	<script src="" async defer></script>
-        </body>
-        </html>
+						</div>
+
+
+					</head>
+					<body>
+
+
+
+
+						<div class="container mt-5 pt-5">
+							<div class="col-md-12" style="color:darkcyan; text-align: center;"><p style="font-size:35px">
+								<b style="font-size:50px; font-weight: strong;">Welcome to <b style="font-size:90px; color: #110c54; font-weight: strong; "><h1 style="">
+									<a href="" class="typewrite" style="color:#110c54; text-decoration: none; font-size: 80px;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
+										<span class="wrap"></span>
+									</a>
+								</h1></b></b></p></div>
+
+
+							</div>
+
+
+							<script src="project.js"></script>
+						</body>
+						</html>
