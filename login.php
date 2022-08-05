@@ -74,5 +74,9 @@
 	</head>
 	<body style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
 
+		<div class="col pt-5 mt-5 ">
+			
+		</div>
+
 	</body>
 	</html>
