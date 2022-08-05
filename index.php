@@ -11,7 +11,7 @@
 				<head>
 					<meta charset="utf-8">
 					<meta http-equiv="X-UA-Compatible" content="IE=edge">
-					<title></title>
+					<title>eLearn</title>
 					<meta name="description" content="">
 					
 					
@@ -69,7 +69,7 @@
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="#" style="color: #7bb2e3"><b>Login</b></a>
+												<a class="nav-link" href="login.php" style="color: #7bb2e3"><b>Login</b></a>
 											</li>
 											
 										</ul>
@@ -105,6 +105,31 @@
 
 
 							</div>
+
+							<!-- Team Section -->
+							<div>
+								
+
+							</div>
+
+
+							<!-- About Section -->
+							<div>
+								
+
+							</div>
+
+
+							<!-- Contact Section -->
+
+							<div>
+								
+
+
+							</div>
+
+
+							<!-- Login -->
 
 
 							<script src="project.js"></script>
