@@ -32,7 +32,7 @@
 							<nav class="navbar navbar-expand-sm bg-light navbar-light navbar navbar-expand-sm bg-dark navbar-dark">
 								<div class="container-fluid">
 									<ul class="navbar-nav" ">
-										<span style="font-size: 30px;>
+										<span>
 										<li class="nav-item">
 											<a class="nav-link active " id="navActive" href="#"  "><b>eLearn</b></a>
 										</li>
