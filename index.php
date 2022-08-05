@@ -14,7 +14,7 @@
 					<title></title>
 					<meta name="description" content="">
 					
-					<link rel="stylesheet" href="project.css">
+					
 
 					<!-- Latest compiled and minified CSS -->
 					<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -83,21 +83,31 @@
 					</head>
 					<body>
 
+						<div>
+
+							<div class="row mt-5 pt-5 container-fluid" id="imageBackground">
+								
+								<div class="col-md-6" style="color:darkcyan; text-align: center;"><p style="font-size:35px">
+									<b style="font-size:40px; font-weight: strong;">Welcome to <b style="font-size:90px; color: #110c54; font-weight: strong; "><h1 style="">
+										<a href="" class="typewrite" style="color:#110c54; text-decoration: none; font-size: 60px;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
+											<span class="wrap"></span>
+										</a>
+									</h1></b></b></p></div>
+
+									<div class="col-md-6">
+										<img src="images/bg.gif" style="width:80% ">
+									</div>
 
 
+								
+							</div>
 
-						<div class="container mt-5 pt-5">
-							<div class="col-md-12" style="color:darkcyan; text-align: center;"><p style="font-size:35px">
-								<b style="font-size:50px; font-weight: strong;">Welcome to <b style="font-size:90px; color: #110c54; font-weight: strong; "><h1 style="">
-									<a href="" class="typewrite" style="color:#110c54; text-decoration: none; font-size: 80px;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
-										<span class="wrap"></span>
-									</a>
-								</h1></b></b></p></div>
 
 
 							</div>
 
 
 							<script src="project.js"></script>
+							<link rel="stylesheet" href="project.css">
 						</body>
 						</html>
