@@ -34,3 +34,10 @@
 #contentOfNav{
 	
 }
+.nav-link: hover{
+	color: white;
+}
+#navbarRight:hover {
+	width: 150%;
+	height: auto;
+}

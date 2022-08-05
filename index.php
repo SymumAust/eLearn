@@ -13,7 +13,7 @@
 					<meta http-equiv="X-UA-Compatible" content="IE=edge">
 					<title></title>
 					<meta name="description" content="">
-					<meta name="viewport" content="width=device-width, initial-scale=1">
+					
 					<link rel="stylesheet" href="project.css">
 
 					<!-- Latest compiled and minified CSS -->
@@ -28,7 +28,7 @@
 				<body>
 
 
-					<div id="contentOfNav"class="row bg-secondary " style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
+					<div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
 
 						
 						<div class="col-md-4 ">
@@ -48,7 +48,7 @@
 						<div class="col-md-8" style="padding-left: 400px;">
 
 
-							<nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
+							<nav id="navbarRight" class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
 								<div class="container-fluid">
 									<a class="navbar-brand" href="#"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
 									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
 									<div class="collapse navbar-collapse" id="navbarNav">
 										<ul class="navbar-nav">
 											<li class="nav-item">
-												<a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b>Home</b></a>
+												<a class="nav-link " aria-current="page" href="#" style="color: #7bb2e3;"><b>Home</b></a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
