@@ -88,8 +88,8 @@
 							<div class="row mt-5 pt-5 container-fluid" id="imageBackground">
 								
 								<div class="col-md-6" style="color:darkcyan; text-align: center;"><p style="font-size:35px">
-									<b style="font-size:40px; font-weight: strong;color: #dbcd0b">Welcome to <b style="font-size:90px; color: #dbcd0b; font-weight: strong; "><h1 style="">
-										<a href="" class="typewrite" style="color:#dbcd0b; text-decoration: none; font-size: 65px; text-shadow: 1px 1px 2px #000000;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
+									<b style="font-size:40px; font-weight: strong;">Welcome to <b style="font-size:90px; color: #110c54; font-weight: strong; "><h1 style="">
+										<a href="" class="typewrite" style="color:#023cfa; text-decoration: none; font-size: 65px; text-shadow: 1px 1px 2px #000000;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
 											<span class="wrap"></span>
 										</a>
 									</h1></b></b></p></div>
