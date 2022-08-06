@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>eLearn</title>
@@ -15,6 +19,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
 		<!-- NavBar -->
+		<span id="login"></span>
 
 		<div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
 
@@ -74,7 +79,10 @@
 	</head>
 	<body style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
 
-		<div class="row col pt-5 mt-5 container-fluid ">
+		<!-- Login Panel -->
+		<span id="">
+
+		<div class="row col pt-5  container-fluid ">
 
 			<div class="wrapper fadeInDown">
 				<div id="formContent">
@@ -87,20 +95,67 @@
 
 					<!-- Login Form -->
 					<form>
-						<input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
-						<input type="text" id="" class="fadeIn third" name="login" placeholder="Password">
+						<input type="text" id="login" class="fadeIn second" name="login" placeholder="User">
+						<input type="Password" id="" class="fadeIn third" name="Password" placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
 						<input type="submit" class="fadeIn fourth" value="Log In">
 					</form>
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
-						<a class="underlineHover" style="text-decoration: none; font-size: 22px" href="#">Forgot Password?</a>
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#">Forgot Password?</a>
+						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#Register">Register Here.</a></p>
+					</div>
+
+			
+
+				</div>
+			</div>
+			
+		</div>
+		
+</span>
+
+		<!-- Registration -->
+		
+		<div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
+
+		<div class="row col pt-5  container-fluid ">
+
+			<div class="wrapper fadeInDown">
+				<div id="formContent">
+					<!-- Tabs Titles -->
+
+					<!-- Icon -->
+					<div class="fadeIn first">
+						<img src="images/logo.png" style="padding-bottom: 10px; padding-top: 15px;" id="icon" alt="User Icon" />
+					</div>
+
+					<!-- Login Form -->
+					<form>
+						<input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
+						<input type="text" id="" class="fadeIn third" name="E-mail" placeholder="E-mail">
+						<input type="Password" id="" class="fadeIn third" name="Password" placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
+						<input type="Password" id="" class="fadeIn third" name="Password" placeholder="Confirm Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
+						<input type="submit" class="fadeIn fourth" value="Register">
+					</form>
+
+					<!-- Remind Passowrd -->
+					<div id="formFooter">
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#">Forgot Password?</a>
+						<p class=""style="text-decoration: none; font-size: 15px">Already have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#login">Login Here.</a></p>
 					</div>
 
 				</div>
 			</div>
 			
 		</div>
+	</div>
+			<span id="Register">
+
+	</span>
+
+
+
 
 	</body>
 	</html>

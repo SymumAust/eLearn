@@ -24,6 +24,9 @@
 
 					<link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
 
+						
+<!-- Navbar -->
+
 						<div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
 
 
@@ -89,7 +92,7 @@
 								
 								<div class="col-md-6" style="color:darkcyan; text-align: center;"><p style="font-size:35px">
 									<b style="font-size:40px; font-weight: strong;">Welcome to <b style="font-size:90px; color: #110c54; font-weight: strong; "><h1 style="">
-										<a href="" class="typewrite" style="color:#023cfa; text-decoration: none; font-size: 65px; text-shadow: 1px 1px 2px #000000;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
+										<a href="" class="typewrite" style="font-weight: strong; color:#023cfa; text-decoration: none; font-size: 65px; text-shadow: 1px 1px 2px #000000;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
 											<span class="wrap"></span>
 										</a>
 									</h1></b></b></p></div>
