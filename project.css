@@ -258,3 +258,143 @@ input[type=text]:placeholder {
 *:focus {
     outline: none;
 } 
+
+/* courses */
+.head img{
+   height: 600px;
+   width: 1200px;
+   padding-top: 3rem;
+   padding-bottom: 4rem;
+   
+}
+.head h2{
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  padding-left: 400px;
+  
+}
+.card h-100{
+  height: 150px;
+  width: 60px;
+}
+.card-text{
+  font-size: 12px;
+  padding-bottom:1rem;
+
+}
+/* contact */
+
+container body{
+  background-image: url("images/contact.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 110vh;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.header{
+  position: absolute;
+  text-align: center;
+  width: 75%;
+  left:12%;
+  top: 2rem;
+}
+.header h2{
+  font-size: 30px;
+}
+.empty{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+.container section{
+  margin-top: 8vh;
+  margin-left: 20vh;
+}
+.content-form{
+  margin-top: 7rem;
+}
+section i{
+  border-radius:50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.8);
+  color: #000;
+  text-align: center;
+}
+.form{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+}
+.form .contact-form input{
+  width: 30rem;
+  background-color: transparent;
+  border: 0px;
+  border: transparent;
+  margin: 20px;
+  font-size: 18px;
+  border-bottom: 2px solid #fff;
+}
+.forrm .contact-form input ~span{
+  position: absolute;
+  left:20px;
+  transition: 0.9s ease-in-out;
+  margin-top: 10px;
+}
+.form .contact-form input:focus ~ span{
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+.form .content-form textarea{
+  width: 30rem;
+  border: 0;
+  background-color: transparent;
+  margin: 20px;
+  font-size: 17px;
+  border-bottom: 2px solid #fff;
+}
+.form .content-form textarea ~ span{
+  position: absolute;
+  left: 20px;
+  margin-top: 10px;
+  transition: 0.9s ease-in-out;
+}
+.form .content-form textarea:focus ~ span{
+  transform: translateY(-20px);
+   pointer-events: none;
+}
+.form .contact-form input[type=submit]{
+  background-color: dodgerblue;
+  border: 2px solid  dodgerblue;
+  width: 50%;
+  height: 40px;
+  margin-top: -5px;
+}
+.form .contact-form input[type=submit]:hover{
+  background-color: transparent;
+  color: dodgerblue;
+}
+.media{
+  position: absolute;
+  top: 85vh;
+  right: 20vh;
+  display: flex;
+  list-style: none;
+}
+.media li{
+  margin: 20px 30px;
+}
+
+
+
