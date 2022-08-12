@@ -516,7 +516,7 @@
 
 
 <script src="card.js"></script>
-
+<script type="text/javascript" src="project.css"></script>
 
 
 
@@ -524,9 +524,4 @@
 			
 </body>
 </html>
-=======
-							<script src="project.js"></script>
-							
-						</body>
-						</html>
->>>>>>> Stashed changes
+
