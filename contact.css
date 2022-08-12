@@ -95,3 +95,12 @@
 .contact-form .send-btn:hover{
     background: #3B9AE1;
 }
+
+@media screeen and (max-width:950px){
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+}
