@@ -432,22 +432,4 @@ section i{
   font-size: 10px;
 }
  
-/* about */
-body{
-    
-  min-height: 100vh;
-  background: url(images/about.jpg) no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.about{
-  align-items: right;
-  margin-left: 800px;
-  margin-right: 20px;
-  font-size: 18px;
-  font-family:monospace;
-  color: #313552;
-}
+
