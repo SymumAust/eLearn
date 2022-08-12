@@ -28,6 +28,7 @@
 					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 					<link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
+						<link rel="stylesheet" type="text/css" href="project.css">
 
             <link rel="stylesheet" type="text/css" href="style.css">
             <script src="project.js"></script>
@@ -149,6 +150,7 @@
   <!-- /.row 
 
 
+<<<<<<< Updated upstream
 </div>
 <!-- /.container 
 
@@ -522,3 +524,9 @@
 			
 </body>
 </html>
+=======
+							<script src="project.js"></script>
+							
+						</body>
+						</html>
+>>>>>>> Stashed changes
