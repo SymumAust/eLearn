@@ -38,9 +38,9 @@
     </div>	
 	<div class="box">
         <img src="images/2.png" alt="">
-        <h4>Introduction to Web Development</h4>
-        <p>Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!</p>
-        <div class="stars">
+        n to the Profession!</p>
+        <div class="stars"><h4>Introduction to Web Development</h4>
+        <p>Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introductio
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
