@@ -100,14 +100,14 @@
 
           <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
           <div class="container-fluid">
-           <a class="navbar-brand" href="#course"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+           <a class="navbar-brand" href="#st"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
              <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:white;">Home</b></a>
+              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
@@ -164,7 +164,7 @@
 <div>
 
 
- <span id="course"></span>
+ <span id="st"></span>
   <section class="hero container-fluid mt-5 pt-5">
                 <div class="container-fluid h-100">
                     <div class="row h-100">
@@ -398,7 +398,8 @@
 </div>
 --->
 <!-- Courses -->
-
+</br>
+<h1 class="container pt-5 " style="text-align: center; font-size: 35px; text-decoration: ;"><b style="font-weight: strong; font-size: 70px; color: #fa3434;">eLearn</b> Courses</h1>
 
 <div class="container pt-5 mt-5 " id="c1">
 
