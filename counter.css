@@ -1,5 +1,5 @@
 #counter {
-    background-color:#1c0038;
+    background-color: #f2eeda;
     padding: 20px 0;
     border-radius: 5px;
     color: #f52c54;
@@ -22,9 +22,9 @@
     color: #f52c54;
 }
 
-.fa-2x {
+#fa-2x {
     margin: 0 auto;
     float: none;
     display: table;
-    color: #4ad1e5;
+    color: #f02e37;
 }

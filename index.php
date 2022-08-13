@@ -562,28 +562,28 @@
     <div class="row text-center">
           <div class="col">
           <div class="counter" id="counter">
-      <i class="fa fa-code fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="1000" data-speed="1500"></h2>
+      <i class="fa fa-code fa-2x" id="fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="1099" data-speed="1000"></h2>
        <p class="count-text " id="count-text">Our Customer</p>
     </div>
           </div>
               <div class="col">
                <div class="counter" id="counter">
-      <i class="fa fa-coffee fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="17000" data-speed="1500"></h2>
+      <i class="fa fa-coffee fa-2x" id="fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="17000" data-speed="1000"></h2>
       <p class="count-text " id="count-text">Happy Users</p>
     </div>
               </div>
               <div class="col">
                   <div class="counter" id="counter">
-      <i class="fa fa-lightbulb-o fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <i class="fa fa-lightbulb-o fa-2x" id="fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1000"></h2>
       <p class="count-text " id="count-text">Course Complete</p>
     </div></div>
               <div class="col">
               <div class="counter" id="counter">
-      <i class="fa fa-bug fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <i class="fa fa-bug fa-2x" id="fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1000"></h2>
       <p class="count-text " id="count-text">Course Conductors</p>
     </div>
               </div>
