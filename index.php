@@ -401,7 +401,7 @@
 </br>
 <h1 class="container pt-5 " style="text-align: center; font-size: 35px; text-decoration: ;"><b style="font-weight: strong; font-size: 70px; color: #fa3434;">eLearn</b> Courses</h1>
 
-<div class="container pt-5 mt-5 " id="c1">
+<div class="container pt-5  " id="c1">
 
  
   <div class="row">
