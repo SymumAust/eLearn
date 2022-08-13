@@ -53,6 +53,25 @@
 <!------ Include the above in your HEAD tag ---------->
 
 
+
+<!-- HERO ST-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/magnific-popup.css" rel="stylesheet">
+
+        <link href="hero.css" rel="stylesheet">
+        
+<!-- HERO END -->
+
+
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
             <!-- Navbar -->
@@ -139,8 +158,96 @@
 
 </div>
 
+
+<!-- HERO SECTION -->
+
+<div>
+
+  <section class="hero container-fluid mt-5 pt-5">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+
+                        <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <small class="small-title">Introducing <b style="font-size: 70px; text-shadow: 2px 2px 4px #ffffff; color: #fc3d56;">eLearn</b> <strong class="text-warning">01/05</strong></small>
+
+                                            <h1>Explore <span class="text-warning">new ideas</span> for your business</h1>
+
+                                            <div class="d-flex align-items-center mt-4">
+                                                <a id="custom-btn" class="custom-btn btn custom-link" href="#section_2">Get Started</a>
+
+                                                <a style= "" class="popup-youtube custom-icon d-flex ms-4" href="https://www.youtube.com/watch?v=AYaHuZ4BB6Y">
+                                                    <i style="background-color: transparent; text-align: center; justify-content:center; align-content: center;align-items: center;" class="bi-play play-icon d-flex m-auto text-white" ></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <small class="small-title">Supporting New Project <strong class="text-warning">01/05</strong></small>
+
+                                            <h1>Strategic Planning for your <span class="text-warning">next project</span></h1>
+
+                                            <div class="d-flex align-items-center mt-4">
+                                                <a class="custom-btn btn custom-link" href="#section_2">Explore Capabilities</a>
+
+                                                <a style="background-color: transparent;" class="popup-youtube custom-icon d-flex ms-4" href="https://www.youtube.com/watch?v=VStvZjykQ00">
+                                                    <i style= "background-color: transparent; opacity: 1; text-align: center; justify-content:center; align-content: center;align-items: center;" class="bi-play play-icon d-flex m-auto text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/slide/jason-goodman-0K7GgiA8lVE-unsplash.jpg" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 <!-- Team Section -->
 <div>
+
+  
 
 
 </div>
@@ -310,6 +417,7 @@
             <span class="fa fa-star checked"style="color: orange;font-size: 15px;"></span>
             <span class="fa fa-star checked" style="color: orange; font-size: 15px; "></span>
             <span class="fa fa-star" style="font-size: 15px;"></span>
+            <link rel="stylesheet" type="text/css" href="style.css">
 
           </div></div>
         </div>

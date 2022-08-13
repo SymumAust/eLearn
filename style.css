@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-a {
+.card-body a {
   color: #85bb65;
  
   text-decoration: none;
@@ -431,13 +431,9 @@ section i{
 #star.checked{
   font-size: 10px;
 }
-<<<<<<< HEAD
+
 
 
 #ccard{
   border-radius: 15px;
 }
-=======
- 
-
->>>>>>> 22f37ab98ba12b66cb9c0ab3186674b72ca0e717
