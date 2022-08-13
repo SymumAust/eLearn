@@ -12,13 +12,13 @@ body {
   height: 100vh;
 }
 
-a {
-  color: #92badd;
-  display:inline-block;
+.card-body a {
+  color: #85bb65;
+ 
   text-decoration: none;
-  font-weight: 400;
+  font-weight: strong;
 }
-
+/*
 h2 {
   text-align: center;
   font-size: 16px;
@@ -28,7 +28,7 @@ h2 {
   margin: 40px 8px 10px 8px; 
   color: #cccccc;
 }
-
+*/
 
 
 /* STRUCTURE */
@@ -431,5 +431,9 @@ section i{
 #star.checked{
   font-size: 10px;
 }
- 
 
+
+
+#ccard{
+  border-radius: 15px;
+}
