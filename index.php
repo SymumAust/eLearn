@@ -76,7 +76,7 @@
 
             <!-- Navbar -->
 
-            <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
+            <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; ">
 
 
 
@@ -107,13 +107,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
              <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b>Home</b></a>
+              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:white;">Home</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #7bb2e3"><b>About</b></a>
+              <a class="nav-link" href="#about" style="color: #7bb2e3"><b>About</b></a>
             </li>
 
             <li class="nav-item">
@@ -163,6 +163,8 @@
 
 <div>
 
+
+ <span id="course"></span>
   <section class="hero container-fluid mt-5 pt-5">
                 <div class="container-fluid h-100">
                     <div class="row h-100">
@@ -176,7 +178,7 @@
 
                                             <h1>Explore <span class="text-warning">new ideas</span> for your business</h1>
 
-                                            <div class="d-flex align-items-center mt-4">
+                                            <div class="d-flex align-items-center mt-4" style="padding-bottom:65px;">
                                                 <a id="custom-btn" class="custom-btn btn custom-link" href="#section_2">Get Started</a>
 
                                                 <a style= "" class="popup-youtube custom-icon d-flex ms-4" href="https://www.youtube.com/watch?v=AYaHuZ4BB6Y">
@@ -232,7 +234,41 @@
 
 </div>
 
+<!-- About -->
 
+
+<section class="container pt-5 mt-5 header3 cid-r1y0ay8sxw" id="header3-1m">
+
+    <span id="about"></span>
+
+    
+
+    <div style="font-family:  'DM Sans', sans-serif; color: #f5587a; " class=" container-fluid align-center">
+        <div class="row">
+            <div class="mbr-white col-lg-6 col-md-12 content">
+                <h1 class="mbr-section-title mbr-bold align-left mbr-white pb-5 mbr-fonts-style align-left display-1">
+                    Innovation and Discovery with <b>eLearn</b>
+                </h1>
+                <p class="mbr-text align-left pb-4 mbr-fonts-style display-7" style="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl elit, varius ut magna vel, tincidunt iaculis sem. Interdum
+                    et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <div style="font-family:  'DM Sans', sans-serif; font-weight: 500;" class="mbr-section-btn align-left">
+                    <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">
+                        Sign Up for Excustion</a>
+                    <a style="background-color: ; color: white;" class="btn btn-md btn-danger display-4" href="https://mobirise.com">
+                        Learn More</a>
+                </div>
+            </div>
+
+            <div class="mbr-white img-col col-lg-6 col-md-12">
+                <img class=" col-12 pt-5 mt-5" src="images/044.jpg" title="" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    
+</section>
 
 
 
@@ -366,7 +402,7 @@
 
 <div class="container pt-5 mt-5 " id="c1">
 
-  <span id="course"></span>
+ 
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
