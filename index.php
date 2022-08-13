@@ -76,7 +76,7 @@
 
             <!-- Navbar -->
 
-            <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
+            <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; ">
 
 
 
@@ -100,20 +100,20 @@
 
           <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
           <div class="container-fluid">
-           <a class="navbar-brand" href="#course"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+           <a class="navbar-brand" href="#st"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
              <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b>Home</b></a>
+              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #7bb2e3"><b>About</b></a>
+              <a class="nav-link" href="#about" style="color: #7bb2e3"><b>About</b></a>
             </li>
 
             <li class="nav-item">
@@ -163,6 +163,8 @@
 
 <div>
 
+
+ <span id="st"></span>
   <section class="hero container-fluid mt-5 pt-5">
                 <div class="container-fluid h-100">
                     <div class="row h-100">
@@ -176,7 +178,7 @@
 
                                             <h1>Explore <span class="text-warning">new ideas</span> for your business</h1>
 
-                                            <div class="d-flex align-items-center mt-4">
+                                            <div class="d-flex align-items-center mt-4" style="padding-bottom:65px;">
                                                 <a id="custom-btn" class="custom-btn btn custom-link" href="#section_2">Get Started</a>
 
                                                 <a style= "" class="popup-youtube custom-icon d-flex ms-4" href="https://www.youtube.com/watch?v=AYaHuZ4BB6Y">
@@ -232,7 +234,41 @@
 
 </div>
 
+<!-- About -->
 
+
+<section class="container pt-5 mt-5 header3 cid-r1y0ay8sxw" id="header3-1m">
+
+    <span id="about"></span>
+
+    
+
+    <div style="font-family:  'DM Sans', sans-serif; color: #f5587a; " class=" container-fluid align-center">
+        <div class="row">
+            <div class="mbr-white col-lg-6 col-md-12 content">
+                <h1 class="mbr-section-title mbr-bold align-left mbr-white pb-5 mbr-fonts-style align-left display-1">
+                    Innovation and Discovery with <b>eLearn</b>
+                </h1>
+                <p class="mbr-text align-left pb-4 mbr-fonts-style display-7" style="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl elit, varius ut magna vel, tincidunt iaculis sem. Interdum
+                    et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <div style="font-family:  'DM Sans', sans-serif; font-weight: 500;" class="mbr-section-btn align-left">
+                    <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">
+                        Sign Up for Excustion</a>
+                    <a style="background-color: ; color: white;" class="btn btn-md btn-danger display-4" href="https://mobirise.com">
+                        Learn More</a>
+                </div>
+            </div>
+
+            <div class="mbr-white img-col col-lg-6 col-md-12">
+                <img class=" col-12 pt-5 mt-5" src="images/044.jpg" title="" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    
+</section>
 
 
 
@@ -362,16 +398,17 @@
 </div>
 --->
 <!-- Courses -->
+</br>
+<h1 class="container pt-5 " style="text-align: center; font-size: 35px; text-decoration: ;"><b style="font-weight: strong; font-size: 70px; color: #fa3434;">eLearn</b> Courses</h1>
 
+<div class="container pt-5  " id="c1">
 
-<div class="container pt-5 mt-5 " id="c1">
-
-  <span id="course"></span>
+ 
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/1.png" style="height: 300px;" alt=""></a>
-        <div class="card-body" id="">
+        <div class="card-body" id="" style="">
           <h4 style="font-size: 30px;">JavaScript for Beginners</h4>
           <p class="card-text">Learn javascript online and supercharge your web design with this Javascript for beginners training course.</p>
 
@@ -381,7 +418,8 @@
             <div class="col-md-6">
               <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
             </div>
-            <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 29$</a></div>
+            <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'" style="{color:green;} :hover { color: skyblue; }; font-size: 25px;">Price 29$</a></div>
 
             <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
               <span></span>
@@ -409,7 +447,8 @@
             <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
           </div>
 
-          <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 49$</a></div>
+          <div class="col-md-6">          <a href="" onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'" style="font-size: 25px;">Price 49$</a></div>
           <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
             <span></span>
             <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
@@ -440,7 +479,8 @@
           <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
         </div>
 
-        <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 5$</a></div>
+        <div class="col-md-6">          <a href="" style="color: red ;font-size: 18px; text-decoration: line-through;">Price 9$ <button  onMouseOver="this.style.color='yellow'"
+   onMouseOut="this.style.color='white'" class="btn btn-danger">Free</button></a></div>
 
         <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
           <span></span>
@@ -473,7 +513,8 @@
           <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
         </div>
 
-        <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 99$</a></div>
+        <div class="col-md-6">         <a href="" style="color: red ;font-size: 18px; text-decoration: line-through;">Price 39$ <button  onMouseOver="this.style.color='yellow'"
+   onMouseOut="this.style.color='white'" class="btn btn-danger">Free</button></a></div>
         <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
           <span></span>
           <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
@@ -500,7 +541,8 @@
         <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
       </div>
 
-      <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 49$</a></div>
+      <div class="col-md-6">          <a href="" style="font-size: 25px;" onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'">Price 49$</a></div>
       <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
         <span></span>
         <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
@@ -521,13 +563,14 @@
       <h4 class="card-title">
         Organizational leadership
       </h4>
-      <p class="card-text" >Learn how to set and communicate direction, influence through other managers, generate organizational alignment, drive innovation, and engineer change</p>
+      <p class="card-text" >Learn how to set and communicate direction, influence through other managers.</p>
 
       <div class="row"><div class="col-md-6">
         <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
       </div>
 
-      <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 29$</a></div>
+      <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'">Price 29$</a></div>
       <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
         <span></span>
         <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
@@ -559,7 +602,8 @@
           <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
         </div>
 
-        <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 99$</a></div>
+        <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'">Price <b style="text-decoration: line-through; font-size: 19px; color: red" >49$</b>19$</a></div>
         <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
           <span></span>
           <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
@@ -589,7 +633,8 @@
       <div class="row"><div class="col-md-6">
         <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
       </div> 
-      <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 49$</a></div>
+      <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'">Price <b style="text-decoration: line-through; font-size: 19px; color: red" >89$</b>31$</a></div>
       <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
         <span></span>
         <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
@@ -610,7 +655,7 @@
     <a href="#"><img class="card-img-top" src="images/9.jpg" style="height: 300px; alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        Financial Accounting
+        Financial Accounting and Economics
       </h4>
       <p class="card-text" >Discover what's behind the numbers in financial statements
       </p>
@@ -620,7 +665,8 @@
         <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
       </div>
 
-      <div class="col-md-6">          <a href="" style="font-size: 25px;">Price 9$</a></div>
+      <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
+   onMouseOut="this.style.color='#85bb65'" style="font-size: 25px;">Price 9$</a></div>
       <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
         <span></span>
         <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
