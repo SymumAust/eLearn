@@ -192,7 +192,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">eLearn © 2022</p>
+                        <p class="copyright">Claimed by eLearn © 2022</p>
                     </div>
                 </div>
             </div>
