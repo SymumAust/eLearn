@@ -120,13 +120,15 @@
 		</div>
 		
 </span>
-
+	
 		<!-- Registration -->
 		
 		<div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
 
 		<div class="row col pt-5  container-fluid ">
+<span id="Register">
 
+	</span>
 			<div class="wrapper fadeInDown">
 				<div id="formContent">
 					<!-- Tabs Titles -->
@@ -156,9 +158,7 @@
 			
 		</div>
 	</div>
-			<span id="Register">
-
-	</span>
+		
 
 
 

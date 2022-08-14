@@ -260,7 +260,7 @@
                     et malesuada fames ac ante ipsum primis in faucibus.</p>
                 <div style="font-family:  'DM Sans', sans-serif; font-weight: 500;" class="mbr-section-btn align-left">
                     <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">
-                        Sign Up for Excustion</a>
+                        Sign In for Excustion</a>
                     <a style="background-color: ; color: white;" class="btn btn-md btn-danger display-4" href="https://mobirise.com">
                         Learn More</a>
                 </div>
