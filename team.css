@@ -1,17 +1,19 @@
 .team{
     margin:75px 0;
 }
-h1{
+.team h1{
+    font-family: "Poppins", sans-serif;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 2px;
-    color: black;
-     padding-bottom: 10px;
+ 
+     padding-bottom: 40px;
 
 }
-h1:after{
+.team h1:after{
     content: '';
-    background: #333;
+    background: #7bb2e3;
+    
     display: block;
     height: 3px;
     width: 150px;

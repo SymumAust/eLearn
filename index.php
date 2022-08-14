@@ -42,6 +42,12 @@
             <link rel="stylesheet" type="text/css" href="style1.css">
             <script src="project.js"></script>
 
+            <!-- Team -->
+
+             <link rel="stylesheet" href="team.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.1.3/css/font-awesome.min.css">
+
 
 <!-- Counter -->
 
@@ -110,7 +116,7 @@
               <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
+              <a class="nav-link" href="#team" style="color: #7bb2e3"><b>Team</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about" style="color: #7bb2e3"><b>About</b></a>
@@ -689,15 +695,61 @@
 
 
 
+<span id="team">
+
+</span>
 
 <script src="card.js"></script>
 <script type="text/javascript" src="project.css"></script>
+
+
+
+<!-- Team -->
+
+
+     <section class="team pt-5 mt-5">
+        <div style=" font-family: "Poppins", sans-serif;" class="container-fluid">
+            <h1 style="color:  #7bb2e3; text-decoration: ;" class=""><b style="font-weight: strong; font-size: 50px; color: #fa3434;">eLearn</b> Team</h1>
+            <div class="row" style="margin-top: 0px;">
+                <div class="col-md-4 profile text-center">
+                    <div class="img-box">
+                        <img src="images/Symum.jpg" class="img-responsive" style="height: 300px ;
+                        width:300px;">
+                    </div>
+                    <h2>Md. Symum Hossain</h2>
+                    <h3>Head, SPO</h3>
+                </div>
+
+                <div class="col-md-4 profile text-center">
+                    <div class="img-box">
+                        <img src="images/member2.jpg" class="img-responsive" style="height: 300px ;
+                        width:300px;" >
+                    </div>
+                    <h2>Marzia Binta Monir</h2>
+                    <h3>Managing Director</h3>
+                </div>
+
+                <div class="col-md-4 profile text-center">
+                    <div class="img-box">
+                        <img src="images/apu.jpg" class="img-responsive" style="height: 300px ;
+                        width:300px;">
+                    </div>
+                    <h2>Marshia Mehjabin Lamisa</h2>
+                    <h3>Marketing Head</h3>
+                </div>
+            </div>
+        </div>
+     </section>  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!-- Contact -->
 
 
-<span class="container-fluid">
 
-</span>
+
+
+
 
 <!-- Counter -->
 
