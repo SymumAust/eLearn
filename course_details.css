@@ -1,8 +1,55 @@
 
+
+#button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #cf1143;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #fff;
+}
+
+#button:hover {background-color: #04cc04}
+
+#button:active {
+  background-color: #04cc04;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .c-head{
     margin: 0px;
+
+
 }
+
+
+
+#main{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("images/course_image.jpg");
+}
+#mm{
+    opacity: 1;
+}
+
+
+h1.inactive {
+  color: darkorange;;
+}
+
+h1.active {
+  color: green;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
 .c-head h1{
+
+      font-family: "Poppins", sans-serif;
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
@@ -13,14 +60,18 @@
     line-height: 1.2em;
   color: #0000;
   text-shadow: 
-    0 0 #000, 
+    0 0 darkorange;, 
     0 1.2em #30AADD;
   overflow: hidden;
   transition: .3s;
 }
+
+.body{
+    color: ;
+}
 .c-head h1:hover {
     text-shadow: 
-      0 -1.2em #000, 
+      0 -1.2em darkorange, 
       0 0 #30AADD;
   }
 
@@ -33,7 +84,7 @@
 }
 .row h2:after{
     content: '';
-    background: #333;
+    background: #f2614e;;
     display: block;
     height: 3px;
     width: 350px;
@@ -48,10 +99,10 @@
 }
 .col h2{
     font-size: 33px;
-    color: #0E3EDA;
+    color: #f2614e;;
 }
 .col h6{
-    color: #42C2FF;
+    color: #614559;
 }
 .row ul{
     position: relative;
@@ -65,7 +116,7 @@
     display: flex;
     background: rgba(86,111,123,1);
     padding: 10px 20px;
-    color: #000;
+    color: #614559;
     margin: 5px 0;
     transition: .5s;
 }
@@ -103,15 +154,24 @@
 }
 .row ul li:nth-child(1){
     background: rgba(86,111,123,0.3);
+    color: darkred;
+    font-weight: 400;
 }
 .row ul li:nth-child(2){
     background: rgba(86,111,123,0.5);
+    color: darkred;
+    font-weight: 400;
 }
 .row ul li:nth-child(3){
     background: rgba(86,111,123,0.7);
+    color: darkred;
+    font-weight: 400;
 }
 .row ul li:nth-child(4){
     background: rgba(86,111,123,0.9);
+    color: darkred;
+    font-weight: 400;
+    
 }
 ul li:hover{
     transform:scale(1.06);
@@ -127,7 +187,7 @@ ul li:hover{
 }
 #myspan{
     font-size: 30px;
-     margin-left:300px;
+     margin-left:50px;
      margin-top: 30px;
-     color: #FF0063;
+     color: #614559;
 }

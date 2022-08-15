@@ -422,7 +422,7 @@
           <div class="row">
 
             <div class="col-md-6">
-              <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+              <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
             </div>
             <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
    onMouseOut="this.style.color='#85bb65'" style="{color:green;} :hover { color: skyblue; }; font-size: 25px;">Price 29$</a></div>
@@ -450,7 +450,7 @@
           <p class="card-text">Are you Interested in Learning Web Development? Enroll in this Free course for a Dynamic Introduction to the Profession!</p>
 
           <div class="row"><div class="col-md-6">
-            <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+            <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
           </div>
 
           <div class="col-md-6">          <a href="" onMouseOver="this.style.color='green'"
@@ -482,7 +482,7 @@
         <p class="card-text" >Insider Method: Learn Advanced Techniques for Microsoft Excel 2013 Fast - Without Lectures, Books, or Night Classes</p>
 
         <div class="row"><div class="col-md-6">
-          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
         </div>
 
         <div class="col-md-6">          <a href="" style="color: red ;font-size: 18px; text-decoration: line-through;">Price 9$ <button  onMouseOver="this.style.color='yellow'"
@@ -516,7 +516,7 @@
         <p class="card-text" >Python For Beginners : This course is meant for absolute beginners in programming or in python.</p>
 
         <div class="row"><div class="col-md-6">
-          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
         </div>
 
         <div class="col-md-6">         <a href="" style="color: red ;font-size: 18px; text-decoration: line-through;">Price 39$ <button  onMouseOver="this.style.color='yellow'"
@@ -544,7 +544,7 @@
       <p class="card-text" >Business Analytics will help demystify data and strengthen your analytical skills.</p>
 
       <div class="row"><div class="col-md-6">
-        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
       </div>
 
       <div class="col-md-6">          <a href="" style="font-size: 25px;" onMouseOver="this.style.color='green'"
@@ -572,7 +572,7 @@
       <p class="card-text" >Learn how to set and communicate direction, influence through other managers.</p>
 
       <div class="row"><div class="col-md-6">
-        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
       </div>
 
       <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
@@ -605,7 +605,7 @@
 
 
         <div class="row"><div class="col-md-6">
-          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
         </div>
 
         <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
@@ -637,7 +637,7 @@
 
 
       <div class="row"><div class="col-md-6">
-        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
       </div> 
       <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
    onMouseOut="this.style.color='#85bb65'">Price <b style="text-decoration: line-through; font-size: 19px; color: red" >89$</b>31$</a></div>
@@ -668,7 +668,7 @@
 
 
       <div class="row"><div class="col-md-6">
-        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
       </div>
 
       <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
