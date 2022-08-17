@@ -177,14 +177,7 @@ ul li:hover{
     transform:scale(1.06);
     background: #ff3772;
 }
-#mybutton{
-    border-radius: 10px ;
-    font-size: 20px;
-    padding: 15px 32px;
-    text-align: center;
-    margin-top: 30px;
-    background-color: #3120E0;
-}
+
 #myspan{
     font-size: 30px;
      margin-left:50px;
