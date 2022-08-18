@@ -413,7 +413,7 @@ section i{
 
 
 
-ul li:hover{
+#navbarNav ul li:hover{
     transform:scale(1.06);
     background: #ff3772;
     border-radius: 10px;
