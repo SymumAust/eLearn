@@ -11,6 +11,7 @@
 	<meta name="description" content="">
 
 	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 
 <!-- icon -->
@@ -58,7 +59,7 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b>Home</b></a>
+								<a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>

@@ -243,6 +243,13 @@ input[type=text]:placeholder {
   transition: width 0.2s;
 }
 
+
+#navbarNav ul li:hover{
+    transform:scale(1.06);
+    background: #ff3772;
+    border-radius: 10px;
+}
+
 .underlineHover:hover {
   color: #0d0d0d;
 }
@@ -404,6 +411,13 @@ section i{
   font-size: 30px;
 }
 
+
+
+ul li:hover{
+    transform:scale(1.06);
+    background: #ff3772;
+    border-radius: 10px;
+}
 
 
 

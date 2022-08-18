@@ -75,13 +75,7 @@ h1.active {
       0 0 #30AADD;
   }
 
-.container{
-   
-    display: flex;
-   
-    margin: 75px;
-   
-}
+
 .row h2:after{
     content: '';
     background: #f2614e;;
@@ -104,7 +98,7 @@ h1.active {
 .col h6{
     color: #614559;
 }
-.row ul{
+#row ul{
     position: relative;
     width: 450px;
     margin: 30px auto 0;
@@ -112,7 +106,7 @@ h1.active {
     padding: 10px;
     margin-left: 400px;
 }
-.row ul li{
+#row ul li{
     display: flex;
     background: rgba(86,111,123,1);
     padding: 10px 20px;
@@ -120,62 +114,75 @@ h1.active {
     margin: 5px 0;
     transition: .5s;
 }
-.row ul li{
+#row ul li{
     width: 700px;
     height: 70px;
 }
 
 
 
-.row ul li span:nth-child(1){
+#row ul li span:nth-child(1){
     margin-right: 15px;
     margin-top: 10px;
    
 }
-.row ul li span:nth-child(2){
+#row ul li span:nth-child(2){
     margin-right: 100px;
     margin-top: 10px;
     
 }
-.row ul li span:nth-child(3){
+#row ul li span:nth-child(3){
     margin-left: 100px;
     margin-top: 10px;
     margin-right: 5px;
     
     
 }
-.row ul li span:nth-child(4){
+#row ul li span:nth-child(4){
     text-align: right;
     margin-top: 10px;
     
 }
-.row ul li span i{
+#row ul li span i{
     align-content: right;
 }
-.row ul li:nth-child(1){
+
+#oop{
+    padding-bottom: 12px;
+   font-size: 30px; color: #7bb2e3
+}
+
+#row ul li:nth-child(1){
     background: rgba(86,111,123,0.3);
     color: darkred;
     font-weight: 400;
 }
-.row ul li:nth-child(2){
+#row ul li:nth-child(2){
     background: rgba(86,111,123,0.5);
     color: darkred;
     font-weight: 400;
 }
-.row ul li:nth-child(3){
+#row ul li:nth-child(3){
     background: rgba(86,111,123,0.7);
     color: darkred;
     font-weight: 400;
 }
-.row ul li:nth-child(4){
+#row ul li:nth-child(4){
     background: rgba(86,111,123,0.9);
     color: darkred;
     font-weight: 400;
     
 }
-ul li:hover{
+#navbarNav ul li:hover{
     transform:scale(1.06);
     background: #ff3772;
+    border-radius: 10px;
+}
+
+#row  ul li:hover{
+    transform:scale(1.06);
+    background: #ff3772;
+    border-radius: 10px;
 }
 
 #myspan{

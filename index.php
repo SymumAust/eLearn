@@ -39,7 +39,7 @@
           <link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
             <link rel="stylesheet" type="text/css" href="project.css">
 
-            <link rel="stylesheet" type="text/css" href="style1.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
             <script src="project.js"></script>
 
             <!-- Team -->
@@ -413,7 +413,7 @@
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="images/1.png" style="height: 300px;" alt=""></a>
+        <a href="course_details.php"><img class="card-img-top" src="images/1.png" style="height: 300px;" alt=""></a>
         <div class="card-body" id="" style="">
           <h4 style="font-size: 30px;">JavaScript for Beginners</h4>
           <p class="card-text">Learn javascript online and supercharge your web design with this Javascript for beginners training course.</p>
@@ -422,7 +422,7 @@
           <div class="row">
 
             <div class="col-md-6">
-              <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
+              <a href="course_details.php"<button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
             </div>
             <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
    onMouseOut="this.style.color='#85bb65'" style="{color:green;} :hover { color: skyblue; }; font-size: 25px;">Price 29$</a></div>
@@ -795,6 +795,77 @@
               </div>
          </div>
 </div>
+
+
+
+<!-- Contact -->
+
+
+<div class="container pt-5 mt-5">
+    <div><h1 style="text-align: center; text-decoration: overline;">Contact Us</h1></div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <div id="googlemap" style="width:100%; height:350px;"></div>
+        </div>
+        <br />
+        <div class="col-md-6" style="font-family: sans-serif, popins; font-size: 20px;" >
+            <form class="my-form">
+                <div class="form-group">
+                    <label for="form-name" style="color: gray;">Name:</label>
+                    <input type="email" class="form-control" id="form-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="form-email" style="color: gray;">Email Address:</label>
+                    <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="form-subject"style="color: gray; "  >Subject:</label>
+                    <input style="height: 20px;" type="text" class="form-control" id="form-subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="form-message" style="color: gray;">Your Message:</label>
+                    <textarea class="form-control" id="form-message" placeholder="Message" style="margin-bottom:20px;"></textarea>
+                </div>
+                <button class="btn btn-success" style="border-radius: 10px;" type="submit" style="margin-bottom:0px;padding-top: 20px;"><b>Contact Us</b></button>                
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .my-form {
+        color: #305896;
+    }
+    .my-form .btn-default {
+        background-color: #305896;
+        color: #fff;
+        border-radius: 0;
+    }
+    .my-form .btn-default:hover {
+        background-color: #4498C6;
+        color: #fff;
+    }
+    .my-form .form-control {
+        border-radius: 0;
+    }
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        // Google Maps setup
+        var googlemap = new google.maps.Map(
+            document.getElementById('googlemap'),
+            {
+                center: new google.maps.LatLng( 23.76370,  90.40689),
+                zoom: 19,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+        );
+    });
+</script>
+
 
 <!-- Footer -->
 
