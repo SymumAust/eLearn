@@ -51,26 +51,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #7bb2e3"><b>About</b></a>
-                </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Team</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" style="color: #7bb2e3"><b  style="color: #e4edce;">About</b></a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #7bb2e3"><b>Contact</b></a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #7bb2e3"><b  style="color: #e4edce;">Contact</b></a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php" style="color: #7bb2e3"><b>Login</b></a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Login</b></a>
+            </li>
 
-            </ul>
-        </div>
+          </ul>        </div>
     </nav>
 </div>
 

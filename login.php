@@ -47,7 +47,7 @@
 
 
 			</div>
-			<div class="col-md-8" style="padding-left: 400px;">
+			<div class="col-md-8" style="padding-left: 600px; text-align: right;" >
 
 
 				<nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
@@ -58,25 +58,16 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#" style="color: #7bb2e3"><b>Team</b></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#" style="color: #7bb2e3"><b>About</b></a>
-							</li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
+            </li>
+            
 
-							<li class="nav-item">
-								<a class="nav-link" href="#" style="color: #7bb2e3"><b>Contact</b></a>
-							</li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Login</b></a>
+            </li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="login.php" style="color: #7bb2e3"><b>Login</b></a>
-							</li>
-
-						</ul>
+          </ul>
 					</div>
 				</nav>
 			</div>

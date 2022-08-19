@@ -44,13 +44,13 @@
 
     <div class="main-content" id="main_admin">
         <div class="admin_header">
-            <h1>
+            <h1  style="font-weight: strong;  color: #fa3434;">
                 
                     <label for="">
                         <span class="las la-bars"></span>
                     </label>
 
-                    Dashboard
+                    eLearn
                 
             </h1>
 
@@ -70,10 +70,10 @@
             </div>
         </div>
 
-        <main id="admin_main">
-            <div style="display: flex;">
+        <main id="admin_main" style="color: lightcoral;" style="border-radius: 10px";>
+            <div style="display: flex;" >
 
-            <div class="cards" class="admin_card"  >
+            <div class="cards" class="admin_card"   >
                 <div class="card-single">
                     <div>
                         <h1>54</h1>
@@ -81,7 +81,7 @@
                     </div>
     
                     <div>
-                        <span class="las la-users"></span>
+                        <span class="las la-users"style="font-size: 40px; color: red;"></span>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     </div>
     
                     <div>
-                        <span class="las la-file-invoice"></span>
+                        <span class="las la-file-invoice"style="font-size: 40px; color: red;"></span>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     </div>
     
                     <div>
-                        <span class="las la-file-invoice"></span>
+                        <span class="las la-file-invoice"style="font-size: 40px; color: red;"></span>
                     </div>
                 </div>
             </div>
@@ -120,13 +120,27 @@
                     </div>
     
                     <div>
-                        <span class="las la-wallet"></span>
+                        <span class="las la-wallet"style="font-size: 40px; color: red;"></span>
                     </div>
                 </div>
             </div>
         </div>
         </main>
         
+    </div>
+
+    <div>
+        
+        <form class="pure-form">
+    <fieldset>
+        <legend>Confirm password with HTML5</legend>
+
+        <input type="password" placeholder="Password" id="password" required>
+        <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+
+        <button type="submit" class="pure-button pure-button-primary">Confirm</button>
+    </fieldset>
+</form>
     </div>
 
     

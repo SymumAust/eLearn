@@ -76,6 +76,7 @@
     z-index: 100;
     
 }
+
 .admin_header h2{
     color:#fff
 }
@@ -126,11 +127,16 @@
 }
 .cards{
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-gap: 2rem;
+    grid-template-columns: 100 100 100 100 ;
+    grid-gap: 100px;
+    margin-right: 100px;
+    box-shadow: 10px 10px 20px #ed5847;
+    transition-duration: 0.2s;
+
+
 }
 .card-single{
-    display: felx;
+    display: flex;
     justify-content: space-between;
     background: #f0f0f0;
 }
