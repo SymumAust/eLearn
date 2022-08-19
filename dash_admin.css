@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+#display_image{
+    width: 375px;
+    height: 211px;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins','sans-serif';
+}
+.sidebar{
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    background-color: #1C3879;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    
+}
+
+
+.sidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding-left: 2rem;
+
+}
+.sidebar-menu a{
+    padding-left: 1 rem;
+    display: block;
+    color: #fff;
+    font-size: 1.5rem ;
+}
+
+.sidebar-menu li{
+  position: relative;
+  
+  list-style: none;
+  margin-top: 3rem;
+    
+}
+.sidebar-menu li:hover{
+    background-color: #fff;
+    padding-top: 1 rem;
+    padding-bottom: 1 rem;
+    border-radius: 30px 0px 0px 30px;
+    margin-right: 50px;
+}
+.sidebar-menu li:hover a{
+    color: #1C3879;
+}
+
+.sidebar-menu a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1 rem;
+}
+.main-content{
+    margin-left: 345px;
+}
+.admin_header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    position: fixed;
+    left: 300px;
+    width: calc(100% - 300px);
+    top:0;
+    z-index: 100;
+    
+}
+.admin_header h2{
+    color:#fff
+}
+.admin_header label span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
+    padding-left: 15px;
+}
+
+.search-wrapper{
+    border: 1px solid #f0f0f0;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper input{
+    height: 40px;
+    
+    border:none;
+    outline: none;
+}
+.search-wrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.user-wrapper{
+    display: flex;
+    align-items: center;
+}
+.user-wrapper img{
+    border-radius: 50%;
+}
+.user-wrapper h4{
+    display: inline-block;
+    margin-top: 3px!important;
+}
+#admin_main{
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    
+    min-height: calc(100vh - 90px);
+    width: 100%;
+    margin-left: 0;
+   
+}
+.cards{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 2rem;
+}
+.card-single{
+    display: felx;
+    justify-content: space-between;
+    background: #f0f0f0;
+}
