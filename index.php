@@ -105,7 +105,7 @@
 
           <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
           <div class="container-fluid">
-           <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+           <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Dashboard</b></button></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -122,7 +122,7 @@
           </li>
 
           <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #7bb2e3"><b  style="color: #e4edce;">Contact</b></a>
+              <a class="nav-link" href="#contact" style="color: #7bb2e3"><b  style="color: #e4edce;">Contact</b></a>
           </li>
 
           <li class="nav-item">
@@ -294,9 +294,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl elit, varius ut magna vel, tincidunt iaculis sem. Interdum
                 et malesuada fames ac ante ipsum primis in faucibus.</p>
                 <div style="font-family:  'DM Sans', sans-serif; font-weight: 500;" class="mbr-section-btn align-left">
-                    <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">
+                    <a class="btn btn-md btn-primary display-4" href="login.php">
                     Sign In for Excustion</a>
-                    <a style="background-color: ; color: white;" class="btn btn-md btn-danger display-4" href="https://mobirise.com">
+                    <a style="background-color: ; color: white;" class="btn btn-md btn-danger display-4" href="">
                     Learn More</a>
                 </div>
             </div>
@@ -889,7 +889,7 @@
 
 
 <!-- Contact -->
-
+<span id="contact"></span>
 
 <div class="container pt-5 mt-5">
     <div><h1 style="text-align: center; text-decoration: overline;">Contact Us</h1></div>

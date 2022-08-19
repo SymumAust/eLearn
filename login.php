@@ -14,6 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 
+
+
+
 <!-- icon -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -52,7 +55,7 @@
 
 				<nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+					<a class="navbar-brand" href="admin.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b> Dashboard</b></button></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -100,7 +103,7 @@
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
-						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#">Forgot Password?</a>
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#forget">Forgot Password?</a>
 						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#Register">Register Here.</a></p>
 					</div>
 
@@ -141,7 +144,7 @@
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
-						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#">Forgot Password?</a>
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#forget">Forgot Password?</a>
 						<p class=""style="text-decoration: none; font-size: 15px">Already have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#login">Login Here.</a></p>
 					</div>
 
@@ -150,8 +153,45 @@
 			
 		</div>
 	</div>
-		
+		<!-- Forget -->
 
+<span id="forget"></span>
+<div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover; padding-bottom: 20px;">
+<div class="row col pt-5  container-fluid " >
+
+			<div class="wrapper fadeInDown">
+				<div id="formContent">
+					<!-- Tabs Titles -->
+
+					<!-- Icon -->
+					<div class="fadeIn first">
+						<img src="images/logo.png" style="padding-bottom: 10px; padding-top: 15px;" id="icon" alt="User Icon" />
+					</div>
+					<h5>Reset Your Password</h5>
+
+					<!-- Login Form -->
+					<form>
+						<input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
+						
+						<input type="submit" class="fadeIn fourth" value="Submit">
+					</form>
+					<p style="font-size: 15px; font-weight: 300;">Enter your email address and we'll send you an email with instructions to reset your password.</p>
+
+					<!-- Remind Passowrd -->
+					<div id="formFooter">
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#">Log In?</a>
+						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#Register">Register Here.</a></p>
+					</div>
+
+			
+
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+		
 
 
 <footer>

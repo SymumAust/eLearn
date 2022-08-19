@@ -52,7 +52,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
         <div class="container-fluid">
-          <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+          <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Dashboard</b></button></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -106,7 +106,13 @@
               <a href="course_details.php"<button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
             </div>
             <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
-   onMouseOut="this.style.color='#85bb65'" style="{color:green;} :hover { color: skyblue; }; font-size: 25px;">Price 29$</a></div>
+   onMouseOut="this.style.color='#85bb65'" style="{color:green;} :hover { color: skyblue; }; font-size: 25px; font-weight:bold;">Price 29$</a></div>
+
+   <style type="text/css">
+     .row a{
+      font-weight:bold;
+     }
+   </style>
 
             <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
               <span></span>

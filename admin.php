@@ -65,25 +65,23 @@
 
 
 		</div>
-		<div class="col-md-8" style="padding-left: 550px;">
+		<div class="col-md-8" style="padding-left: 600px;">
 
 
 			<nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#st"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+					<a class="navbar-brand" href="#st"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Sign Out</b></button></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
+								<a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:darkblue;">Home</b></a>
 							</li>
 							
 
-							<li class="nav-item">
-								<a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: darkblue;">Login</b></a>
-							</li>
+							
 
 						</ul>        </div>
 					</nav>
@@ -99,7 +97,7 @@
 					<div class="sidebar-menu" style="">
 						<ul id="dashadmin_ul">
 							<img src="images/Symum.jpg" style="height: 150px; width: auto; border-radius: 50%; margin-left: 50px ; margin-top: 20px;"  >
-							<h4 style="margin-left: 40px; color: darkcyan;" >Md. Symum Hossain</h4>
+							<h4 style="margin-left: 80px; color: darkcyan;" >Admin</h4>
 							<li>
 
 								<a href="" class="active" style="text-decoration:none;"><span class="las la-igloo"></span>
@@ -109,7 +107,7 @@
 
 								<li>
 									<a href=""><span class="las la-inbox"></span>
-										<span>Inbox</span></a>
+										<span>Feedback</span></a>
 
 									</li>
 
@@ -163,92 +161,130 @@
 									</div>
 								</div>
 
-								<span id="pass"></span>
-									<div class="container" style="margin-top: 100px; color:#7bb2e3 ;">
 
-										<div class="row container-fluid" style=" justify-content: center;">
-											<h1 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center;">Settings</h1>
+								<!-- Feedback -->
+								<div class="container">
+									
+									<div class="row text-center">
+										<h1 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center; padding-top: 50px;">Feedback</h1>
 
-											<h4 style="text-align: center;">Change Password?</h4>
-											<div class="col-sm-4">
-
-												<label>Current Password</label>
-												<div class="form-group pass_show"> 
-													<input type="password" value="faisalkhan@123" class="form-control" placeholder="Current Password"> 
-												</div> 
-												<label>New Password</label>
-												<div class="form-group pass_show"> 
-													<input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
-												</div> 
-												<label>Confirm Password</label>
-												<div class="form-group pass_show"> 
-													<input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password"> 
-												</div>
-												<button class="btn btn-primary" style="text-align: center;">Confirm</button> 
-												
-
-											</div>  
-										</div>
 									</div>
+								</div>
 
 
-								
-
-							</br>
+								<!-- Settings -->
 
 
 
-							<!-- Footer -->
 
-							<div>
-								<footer>
-									<div class="footer-clean">
-										<footer>
-											<div class="container">
-												<div class="row justify-content-center">
-													<div class="col-sm-4 col-md-3 item">
-														<h3>Services</h3>
-														<ul>
-															<li><a href="#">Web design</a></li>
-															<li><a href="#">Development</a></li>
-															<li><a href="#">Hosting</a></li>
-														</ul>
-													</div>
-													<div class="col-sm-4 col-md-3 item">
-														<h3>About</h3>
-														<ul>
-															<li><a href="#">Company</a></li>
-															<li><a href="#">Team</a></li>
-															<li><a href="#">Legacy</a></li>
-														</ul>
-													</div>
-													<div class="col-sm-4 col-md-3 item">
-														<h3>Careers</h3>
-														<ul>
-															<li><a href="#">Job openings</a></li>
-															<li><a href="#">Employee success</a></li>
-															<li><a href="#">Benefits</a></li>
-														</ul>
-													</div>
-													<div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-														<p class="copyright">Claimed by eLearn © 2022</p>
-													</div>
+								<span id="pass"></span>
+								<div class="container" style="margin-top: 100px; color:#7bb2e3 ;">
+
+									<div class="row container-fluid" style=" justify-content: center;">
+										<h1 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center;">Settings</h1>
+
+										<h4 style="text-align: center;">Change Password?</h4>
+										<div class="col-sm-4">
+
+											<label>Current Password</label>
+											<div class="form-group pass_show"> 
+												<input type="password" value="faisalkhan@123" class="form-control" placeholder="Current Password"> 
+											</div> 
+											<label>New Password</label>
+											<div class="form-group pass_show"> 
+												<input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
+											</div> 
+											<label>Confirm Password</label>
+											<div class="form-group pass_show"> 
+												<input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password"> 
+											</div>
+											<button class="btn btn-primary" style="text-align: center;">Confirm</button> 
+
+
+										</div>  
+
+
+									</div>
+								</div>
+								<div class="container">
+									<div class="row container-fluid">
+
+
+
+										<div class="col-sm-4 text-center" style="margin-left: 300px; text-align: center; justify-content: center;">
+
+											<h5 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center; padding-top: 50px;">Upload Picture</h5>
+
+											<div class="user-wrapper" style="padding-left: 50px;">
+												<input class="file-upload-input" type="file" accept="image/png,image/jpg,image/jpeg">
+												<div id="display_img">
+
+												</div>
+												<div>
+													<h4></h4>
 												</div>
 											</div>
-										</footer>
-									</div>
-									<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-									<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-								</footer></div>
+										</div></div></div>
 
 
-								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-								<link rel="stylesheet" type="text/css" href="footer.css">
-								<link rel="stylesheet" type="text/css" href="style.css">
-								<link rel="stylesheet" type="text/css" href="dash_admin.css">
 
 
-							</body>
-							</html>
+									</br>
+
+
+
+									<!-- Footer -->
+
+									<div>
+										<footer>
+											<div class="footer-clean">
+												<footer>
+													<div class="container">
+														<div class="row justify-content-center">
+															<div class="col-sm-4 col-md-3 item">
+																<h3>Services</h3>
+																<ul>
+																	<li><a href="#">Web design</a></li>
+																	<li><a href="#">Development</a></li>
+																	<li><a href="#">Hosting</a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 col-md-3 item">
+																<h3>About</h3>
+																<ul>
+																	<li><a href="#">Company</a></li>
+																	<li><a href="#">Team</a></li>
+																	<li><a href="#">Legacy</a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 col-md-3 item">
+																<h3>Careers</h3>
+																<ul>
+																	<li><a href="#">Job openings</a></li>
+																	<li><a href="#">Employee success</a></li>
+																	<li><a href="#">Benefits</a></li>
+																</ul>
+															</div>
+															<div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+																<p class="copyright">Claimed by eLearn © 2022</p>
+															</div>
+														</div>
+													</div>
+												</footer>
+											</div>
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+										</footer></div>
+
+
+										<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+										<link rel="stylesheet" type="text/css" href="footer.css">
+										<link rel="stylesheet" type="text/css" href="style.css">
+										<link rel="stylesheet" type="text/css" href="dash_admin.css">
+
+
+									</body>
+									</html>
