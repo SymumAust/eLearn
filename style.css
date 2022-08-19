@@ -244,6 +244,10 @@ input[type=text]:placeholder {
 }
 
 
+.team .row p{
+  font-size: 30px;
+}
+
 #navbarNav ul li:hover{
     transform:scale(1.06);
     background: #ff3772;
@@ -417,6 +421,11 @@ section i{
     transform:scale(1.06);
     background: #ff3772;
     border-radius: 10px;
+
+}
+
+#navbarNav{
+  color: darkblue;
 }
 
 

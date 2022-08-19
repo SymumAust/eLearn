@@ -81,8 +81,7 @@
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
             <!-- Navbar -->
-
-            <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; ">
+ <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; position: relative; overflow-y: hidden;">
 
 
 
@@ -106,7 +105,7 @@
 
           <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
           <div class="container-fluid">
-           <a class="navbar-brand" href="#st"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
+           <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Get Started</b></button></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -138,8 +137,10 @@
   </div>
 
 
+           
 </head>
 <body style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
+
 
   <div>
 
@@ -591,103 +592,12 @@
 </div>
 </div>
 </div>
-<div class="row">
-
-  <div class="col-lg-4 col-sm-6 mb-4">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="images/7.jpg" style="height: 300px;alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          Design Thinkiing and Innovation
-        </h4>
-        <p class="card-text" >Uncover innovation solution to your most challenging business problems.
-        </p>
 
 
-        <div class="row"><div class="col-md-6">
-          <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
-        </div>
-
-        <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
-   onMouseOut="this.style.color='#85bb65'">Price <b style="text-decoration: line-through; font-size: 19px; color: red" >49$</b>19$</a></div>
-        <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
-          <span></span>
-          <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
-          <span class="fa fa-star checked" style="color: orange;font-size: 15px;"></span>
-          <span class="fa fa-star checked"style="color: ;font-size: 15px;"></span>
-          <span class="fa fa-star" style="color: ; font-size: 15px; "></span>
-          <span class="fa fa-star" style="color: ; font-size: 15px;"></span>
-
-        </div></div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <a href="#"><img class="card-img-top" src="images/8.jpeg" style="height: 300px;alt=""></a>
-    <div class="card-body">
-      <h4 class="card-title">
-        Sustainable Business Strategy
-      </h4>
-      <p class="card-text" >Develop the tools and techniques to become a purpose-driven business.
-      </p>
-
-
-      <div class="row"><div class="col-md-6">
-        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
-      </div> 
-      <div class="col-md-6">          <a href="" style="font-size: 25px;"  onMouseOver="this.style.color='green'"
-   onMouseOut="this.style.color='#85bb65'">Price <b style="text-decoration: line-through; font-size: 19px; color: red" >89$</b>31$</a></div>
-      <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
-        <span></span>
-        <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
-        <span class="fa fa-star checked" style="color: orange;font-size: 15px;"></span>
-        <span class="fa fa-star checked"style="color: orange;font-size: 15px;"></span>
-        <span class="fa fa-star" style="color: orange; font-size: 15px; "></span>
-        <span class="fa fa-star" style="color: ; font-size: 15px;"></span>
-
-      </div></div>
-
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="col-lg-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <a href="#"><img class="card-img-top" src="images/9.jpg" style="height: 300px; alt=""></a>
-    <div class="card-body">
-      <h4 class="card-title">
-        Financial Accounting and Economics
-      </h4>
-      <p class="card-text" >Discover what's behind the numbers in financial statements
-      </p>
-
-
-      <div class="row"><div class="col-md-6">
-        <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button>
-      </div>
-
-      <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
-   onMouseOut="this.style.color='#85bb65'" style="font-size: 25px;">Price 9$</a></div>
-      <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
-        <span></span>
-        <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
-        <span class="fa fa-star checked" style="color: orange;font-size: 15px;"></span>
-        <span class="fa fa-star checked"style="color: orange;font-size: 15px;"></span>
-        <span class="fa fa-star" style="color: orange; font-size: 15px; "></span>
-        <span class="fa fa-star" style="color: orange; font-size: 15px;"></span>
-
-      </div></div>
-    </div>
-  </div>
-</div>
-</div>
 
 </div>
+<div style="text-align: center; justify-content: center; align-content: center;">
+<a href="test.php"><button class="btn btn-success container-fluid" style=" width:  15%; ">View All Courses</button></a></div>
 </div>
 
 
@@ -709,34 +619,177 @@
 
      <section class="team pt-5 mt-5">
         <div style=" font-family: "Poppins", sans-serif;" class="container-fluid">
-            <h1 style="color:  #7bb2e3; text-decoration: ;" class=""><b style="font-weight: strong; font-size: 50px; color: #fa3434;">eLearn</b> Team</h1>
+            <h1 style="color:  #7bb2e3; text-decoration: ;" class=""><b style="font-weight: strong; font-size: 50px; color: #fa3434;">eLearn</b> User Feedback</h1>
             <div class="row" style="margin-top: 0px;">
+
+                <div class="slideshow-container">
+
+
+<div class="mySlides" style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-attachment: fixed ;background-size: cover; position: relative; font-weight: 800;">
+    <div class="row">
                 <div class="col-md-4 profile text-center">
                     <div class="img-box">
-                        <img src="images/Symum.jpg" class="img-responsive" style="height: 300px ;
-                        width:300px;">
+                        <img  src="images/Symum.jpg" class="img-responsive" style="height: 150px ;
+                        width:150px; border-radius: 50%;">
                     </div>
                     <h2>Md. Symum Hossain</h2>
-                    <h3>Head, SPO</h3>
+                    <h3>Student, AUST</h3>
+                    <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
                 </div>
 
                 <div class="col-md-4 profile text-center">
                     <div class="img-box">
-                        <img src="images/member2.jpg" class="img-responsive" style="height: 300px ;
-                        width:300px;" >
+                        <img src="images/member2.jpg" class="img-responsive" style="height: 150px ;
+                        width:150px;border-radius: 50%;" >
                     </div>
                     <h2>Marzia Binta Monir</h2>
-                    <h3>Managing Director</h3>
+                    <h3>Proffessor, BUET</h3>
+                    <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
                 </div>
 
                 <div class="col-md-4 profile text-center">
                     <div class="img-box">
-                        <img src="images/apu.jpg" class="img-responsive" style="height: 300px ;
-                        width:300px;">
+                        <img src="images/apu.jpg" class="img-responsive" style="height: 150px ;
+                        width:150px;border-radius: 50%;">
                     </div>
                     <h2>Marshia Mehjabin Lamisa</h2>
-                    <h3>Marketing Head</h3>
+                    <h3>Faculty, MIT</h3>
+                    <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
                 </div>
+
+                </div></div>
+
+                <div class="mySlides">
+
+                    <div class="col-md-4 profile text-center">
+                    <div class="img-box">
+                        <img src="images/apu.jpg" class="img-responsive" style="height: 150px ;
+                        width:150px;border-radius: 50%;">
+                    </div>
+                    <h2>Marshia Mehjabin Lamisa</h2>
+                    <h3>Faculty, MIT</h3>
+                    <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
+                </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<style type="text/css">
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}</style>
             </div>
         </div>
      </section>  
@@ -795,6 +848,9 @@
               </div>
          </div>
 </div>
+
+<!-- Feedback -->
+
 
 
 
@@ -867,9 +923,15 @@
 </script>
 
 
+<!-- Feedback -->
+
+
+
+
+
 <!-- Footer -->
 
-<div>
+<div style="padding-top: 50px;">
   <footer>
     <div class="footer-clean">
       <footer>
@@ -915,6 +977,11 @@
 <link rel="stylesheet" type="text/css" href="footer.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+
+
+
 </body>
 </html>
 
