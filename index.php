@@ -1,3 +1,28 @@
+<?php 
+
+    $serverName = "127.0.0.1:3307";
+    $userName = "root";
+    $password = "";
+    $database = "tabtest";
+
+
+
+    $conn = mysqli_connect($serverName, $userName, $password, $database);
+
+      if(!$conn){
+        die("Sorry: ".mysqli_connect_error());
+    }
+    else{
+
+    echo "";
+}
+
+
+?>
+
+
+
+
 
 
 
@@ -115,7 +140,7 @@
               <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Team</b></a>
+              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Feedback</b></a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#about" style="color: #7bb2e3"><b  style="color: #e4edce;">About</b></a>
@@ -900,28 +925,67 @@
         </div>
         <br />
         <div class="col-md-6" style="font-family: sans-serif, popins; font-size: 20px;" >
-            <form class="my-form">
+            <form class="my-form" method="POST">
                 <div class="form-group">
                     <label for="form-name" style="color: gray;">Name:</label>
-                    <input type="email" class="form-control" id="form-name" placeholder="Name">
+                    <input type="name" class="form-control" id="form-name" placeholder="Name"  name="name">
                 </div>
                 <div class="form-group">
                     <label for="form-email" style="color: gray;">Email Address:</label>
-                    <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                    <input type="email" class="form-control" id="form-email" placeholder="Email Address" name="email">
                 </div>
                 <div class="form-group">
                     <label for="form-subject"style="color: gray; "  >Subject:</label>
-                    <input style="height: 20px;" type="text" class="form-control" id="form-subject" placeholder="Subject">
+                    <input style="height: 20px;" type="text" class="form-control" id="form-subject" placeholder="Subject" name="subject">
                 </div>
                 <div class="form-group">
                     <label for="form-message" style="color: gray;">Your Message:</label>
-                    <textarea class="form-control" id="form-message" placeholder="Message" style="margin-bottom:20px;"></textarea>
+                    <textarea class="form-control" id="form-message" placeholder="Message" style="margin-bottom:20px;" name="message"></textarea>
                 </div>
-                <button class="btn btn-success" style="border-radius: 10px;" type="submit" style="margin-bottom:0px;padding-top: 20px;"><b>Contact Us</b></button>                
+                <button name="ok" class="btn btn-success" style="border-radius: 10px;" type="submit" style="margin-bottom:0px;padding-top: 20px;"><b>Contact Us</b></button>                
             </form>
         </div>
     </div>
 </div>
+<label class="text-center " style="justify-content: center; text-align: center; margin-left: 680px; font-weight: 500; color: green; font-family: arial-black;">
+<?php 
+
+
+
+if(isset($_REQUEST["ok"])){
+$Name = $_REQUEST['name'];
+$Email = $_REQUEST['email'];
+
+$Subject = $_REQUEST['subject'];
+$Message = $_REQUEST['message'];
+
+
+    $sql = "INSERT INTO `Contact` (`Name`, `Email`, `Subject`, `Message`) Values ('$Name', '$Email','$Subject','$Message')";
+
+    $result = mysqli_query($conn, $sql);
+if(!$result){
+    echo "error".mysqli_error($conn);
+  
+
+}
+else {
+      echo "Submitted";
+    // code...
+}
+}
+
+
+
+
+  
+
+ ?>
+
+</label>
+
+
+
+
 
 <style>
     .my-form {
@@ -1019,3 +1083,10 @@
 </body>
 </html>
 
+
+
+<?php 
+
+
+
+    ?>
