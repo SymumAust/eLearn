@@ -103,7 +103,7 @@
           <div class="row">
 
             <div class="col-md-6">
-              <a href="course_details.php"<button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
+              <a href="course_details.php"><button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
             </div>
             <div class="col-md-6">          <a href=""  onMouseOver="this.style.color='green'"
    onMouseOut="this.style.color='#85bb65'" style="{color:green;} :hover { color: skyblue; }; font-size: 25px; font-weight:bold;">Price 29$</a></div>
