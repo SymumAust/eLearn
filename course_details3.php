@@ -86,7 +86,7 @@
     <div class="container">
         <div id="row" class="row ">
             <div class="col">
-                <img src="images/1.png" alt="java" >
+                <img src="images/3.jpg" alt="java" >
             </div>
             <div class="col">
                 <h2> Learn Microsoft Excel 2013-Advanced</h2>

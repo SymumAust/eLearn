@@ -1,26 +1,8 @@
 <?php 
 
-    $serverName = "127.0.0.1:3307";
-    $userName = "root";
-    $password = "";
-    $database = "tabtest";
-
-
-
-    $conn = mysqli_connect($serverName, $userName, $password, $database);
-
-      if(!$conn){
-        die("Sorry: ".mysqli_connect_error());
-    }
-    else{
-
-    echo "";
-}
-
-
-?>
-
-
+include 'dbConnection.php';
+include 'test_database_fetch.php'
+ ?>
 
 
 
@@ -255,7 +237,27 @@
                         </div>
 
                         <div class="carousel-image-wrap">
-                            <img src="images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg" class="img-fluid carousel-image" alt="">
+
+
+  
+                            <img src="<?php $query = "SELECT * FROM `carsoul_link` where `id` = 3 ;";
+  
+  // FETCHING DATA FROM DATABASE
+  $result = $conn->query($query);
+  
+    if ($result->num_rows > 0) 
+    {
+        // OUTPUT DATA OF EACH ROW
+        while($row = $result->fetch_assoc())
+        {
+                $abc = $row["linkImage"];
+        }
+    } 
+    else {
+        echo "0 results";
+    }
+  echo $abc;
+    ?>" alt="" class="img-fluid carousel-image" style="">
                         </div>
                     </div>
 
@@ -277,7 +279,24 @@
                         </div>
 
                         <div class="carousel-image-wrap">
-                            <img src="images/slide/jason-goodman-0K7GgiA8lVE-unsplash.jpg" class="img-fluid carousel-image" alt="">
+                            <img src="<?php $query = "SELECT * FROM `carsoul_link` where `id` = 4 ;";
+  
+  // FETCHING DATA FROM DATABASE
+  $result = $conn->query($query);
+  
+    if ($result->num_rows > 0) 
+    {
+        // OUTPUT DATA OF EACH ROW
+        while($row = $result->fetch_assoc())
+        {
+                $abc = $row["linkImage"];
+        }
+    } 
+    else {
+        echo "0 results";
+    }
+  echo $abc;
+   $conn->close(); ?>" class="img-fluid carousel-image" alt="">
                         </div>
                     </div>
 
@@ -702,7 +721,7 @@
                                 width:150px;border-radius: 50%;" >
                             </div>
                             <h2>Marzia Binta Monir</h2>
-                            <h3>Proffessor, BUET</h3>
+                            <h3>Student, AUST</h3>
                             <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
                         </div>
 
@@ -712,7 +731,7 @@
                                 width:150px;border-radius: 50%;">
                             </div>
                             <h2>Marshia Mehjabin Lamisa</h2>
-                            <h3>Faculty, MIT</h3>
+                            <h3>Student, AUST</h3>
                             <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
                         </div>
 
