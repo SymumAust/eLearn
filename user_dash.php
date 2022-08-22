@@ -1,5 +1,5 @@
 <?php
-include_once('../dbConnection.php');
+include_once('dbConnection.php');
 if(!isset($_SESSION)){
     session_start();
 }  
@@ -18,7 +18,7 @@ if(isset($stuLogEmail)){
     $row = $result->fetch_assoc();
     $stu_img=$row['stu_img'];
 }
-
+?>
 
 <!DOCTYPE html>
 <html>
@@ -119,17 +119,17 @@ if(isset($stuLogEmail)){
 				<div class="sidebar col-md-4" style="">
 					<div class="sidebar-menu" style="">
 						<ul id="dashadmin_ul">
-							<img src="<img src="<?php echo $stu_img" style="height: 150px; width: auto; border-radius: 50%; margin-left: 50px ; margin-top: 20px;"  >" style="height: 150px; width: auto; border-radius: 50%; margin-left: 50px ; margin-top: 20px;"  >
+							ft<img src="marzu.jpg" style="height: 150px; width: auto; border-radius: 50%; margin-left: 50px ; margin-top: 20px;">
 							<h4 style="margin-left: 80px; color: darkcyan;" >User</h4>
 							<li>
 
-								<a href="" class="active" style="text-decoration:none;"><span class="las la-igloo"></span>
+								<a href="my_profile.php" class="" style="text-decoration:none;"><span class="las la-igloo"></span>
 									<span>Dashboard</span></a>
 
 								</li>
 
 								<li>
-									<a href=""><span class="las la-inbox"></span>
+									<a href="stufeedback.php"><span class="las la-inbox"></span>
 										<span>Feedback</span></a>
 
 									</li>

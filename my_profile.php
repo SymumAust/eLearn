@@ -3,13 +3,13 @@ if(!isset($_SESSION)){
     session_start();
 }
 
-include('./stuInclude/user_dash.php');
-include_once('../dbConnection.php');
+
+include_once('dbConnection.php');
 
 if(isset($_SESSION[is_login])){
     $stuEmail=$_SESSION['stuLogEmail'];
 }else{
-    echo "<script> location.href='..index.php';</script>";
+    echo "<script> location.href='index.php';</script>";
 }
 
 $sql="SELECT *FROM student WHERE stu_email='$stuEmail'";
@@ -46,6 +46,18 @@ if(isset($_REQUEST['updateStuNameBtn'])){
     }
 }
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 <div class="col-sm-6 mt-5">
     <form class="mx-5" method="POST" enctype="multipart/form-data">
      <div class="form-group">
@@ -81,3 +93,6 @@ if(isset($_REQUEST['updateStuNameBtn'])){
 
 
 </div>
+
+</body>
+</html>
