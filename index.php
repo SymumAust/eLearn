@@ -221,7 +221,7 @@
         echo "0 results";
     }
   echo $abc;
-  $conn->close();
+ 
   
     ?>" alt="" class="img-fluid carousel-image" style="">
                         </div>

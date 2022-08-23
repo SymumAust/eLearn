@@ -69,7 +69,7 @@
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
-						<div><p style="font-size: 15px; color: darkred; font-weight: 400;">
+						<div><p style="font-size: 15px; color: darkred; font-weight: bold;">
 							<?php 
 
  

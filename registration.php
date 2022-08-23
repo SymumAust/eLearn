@@ -114,7 +114,7 @@
 
 					<!-- Remind Passowrd -->
 			<div id="formFooter">
-				<div><p style="font-size: 17px; color: red; font-weight: 400;">
+				<div><p style="font-size: 17px; color: red; font-weight: bold;">
 <?php 
 
    $serverName = "127.0.0.1:3307";
