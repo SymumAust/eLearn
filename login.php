@@ -69,7 +69,7 @@
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
-						<div><p style="font-size: 20px; color: red; font-weight: bold;">
+						<div><p style="font-size: 15px; color: darkred; font-weight: 400;">
 							<?php 
 
  
@@ -99,8 +99,8 @@ if(mysqli_num_rows($result)===1 ){
 }
 ?>
 						</p></div>
-						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#forget">Forgot Password?</a>
-						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#Register">Register Here.</a></p>
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="forget.php">Forgot Password?</a>
+						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="registration.php">Register Here.</a></p>
 					</div>
 			
 

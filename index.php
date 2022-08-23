@@ -1,8 +1,27 @@
 <?php 
 
-include 'dbConnection.php';
-include 'test_database_fetch.php'
- ?>
+    $serverName = "127.0.0.1:3307";
+    $userName = "root";
+    $password = "";
+    $database = "t_database";
+
+
+
+    $conn = mysqli_connect($serverName, $userName, $password, $database);
+
+      if(!$conn){
+        die("Sorry: ".mysqli_connect_error());
+    }
+    else{
+
+    echo "";
+}
+
+
+
+
+
+?>
 
 
 
@@ -87,62 +106,7 @@ include 'test_database_fetch.php'
 
                     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
-                    <!-- Navbar -->
-                    <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; position: relative; overflow-y: hidden;">
-
-
-
-
-                     <div class="col-md-4 ">
-
-
-                      <nav class="navbar navbar-light ">
-                       <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                         <img src="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
-                         eLearn</b>
-                     </a>
-                 </div>
-             </nav>
-
-
-         </div>
-         <div class="col-md-8" style="padding-left: 400px;">
-
-
-          <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
-          <div class="container-fluid">
-           <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Dashboard</b></button></a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Feedback</b></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#about" style="color: #7bb2e3"><b  style="color: #e4edce;">About</b></a>
-          </li>
-
-          <li class="nav-item">
-              <a class="nav-link" href="#contact" style="color: #7bb2e3"><b  style="color: #e4edce;">Contact</b></a>
-          </li>
-
-          <li class="nav-item">
-              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Login</b></a>
-          </li>
-
-      </ul>
-  </div>
-</nav>
-</div>
-
-</div>
-
+                  
 
 
 </head>
@@ -257,6 +221,8 @@ include 'test_database_fetch.php'
         echo "0 results";
     }
   echo $abc;
+  $conn->close();
+  
     ?>" alt="" class="img-fluid carousel-image" style="">
                         </div>
                     </div>
@@ -675,7 +641,7 @@ include 'test_database_fetch.php'
 
 </div>
 <div style="text-align: center; justify-content: center; align-content: center;">
-    <a href="test.php"><button class="btn btn-success container-fluid" style=" width:  15%; ">View All Courses</button></a></div>
+    <a href="all_course.php"><button class="btn btn-success container-fluid" style=" width:  15%; ">View All Courses</button></a></div>
 </div>
 
 
@@ -969,6 +935,21 @@ include 'test_database_fetch.php'
 <label class="text-center " style="justify-content: center; text-align: center; margin-left: 680px; font-weight: 500; color: green; font-family: arial-black;">
 <?php 
 
+   $serverName = "127.0.0.1:3307";
+    $userName = "root";
+    $password = "";
+    $database = "tabtest";
+
+    $conn = mysqli_connect($serverName, $userName, $password, $database);
+
+      if(!$conn){
+        die("Sorry: ".mysqli_connect_error());
+    }
+    else{
+
+    echo "";
+}
+
 
 
 if(isset($_REQUEST["ok"])){
@@ -979,7 +960,7 @@ $Subject = $_REQUEST['subject'];
 $Message = $_REQUEST['message'];
 
 
-    $sql = "INSERT INTO `Contact` (`Name`, `Email`, `Subject`, `Message`) Values ('$Name', '$Email','$Subject','$Message')";
+    $sql = "INSERT INTO `contact` (`Name`, `Email`, `Subject`, `Message`) Values ('$Name', '$Email','$Subject','$Message')";
 
     $result = mysqli_query($conn, $sql);
 if(!$result){
@@ -993,10 +974,6 @@ else {
 }
 }
 
-
-
-
-  
 
  ?>
 
@@ -1049,46 +1026,7 @@ else {
 <!-- Footer -->
 
 <div style="padding-top: 50px;">
-  <footer>
-    <div class="footer-clean">
-      <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-4 col-md-3 item">
-              <h3>Services</h3>
-              <ul>
-                <li><a href="#">Web design</a></li>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Hosting</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4 col-md-3 item">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Legacy</a></li>
-        </ul>
-    </div>
-    <div class="col-sm-4 col-md-3 item">
-      <h3>Careers</h3>
-      <ul>
-        <li><a href="#">Job openings</a></li>
-        <li><a href="#">Employee success</a></li>
-        <li><a href="#">Benefits</a></li>
-    </ul>
-</div>
-<div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-  <p class="copyright">Claimed by eLearn © 2022</p>
-</div>
-</div>
-</div>
-</footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-</footer>
 </div>
 
 <link rel="stylesheet" type="text/css" href="footer.css">
@@ -1098,14 +1036,21 @@ else {
 
 
 
+ <?php 
+include 'navbar1.php';
 
+ ?>
+
+  <?php 
+include 'footer.php';
+
+ ?>
 </body>
 </html>
 
 
 
 <?php 
-
 
 
     ?>
