@@ -115,10 +115,10 @@
             $mail->Body="<b>Dear User</b>
             <h3>We received a request to reset your password.</h3>
             <p>Kindly click the below link to reset your password</p>
-            http://localhost/project_eLearn/eLearn/Login-System-main/reset_psw.php
+            http://localhost/project_eLearn/eLearn/reset_psw.php
             <br><br>
             <p>With regrads,</p>
-            <b>@eLearn Community </b>";
+            <b>@eLearn </b>";
 
             if(!$mail->send()){
                 ?>
