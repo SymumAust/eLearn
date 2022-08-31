@@ -73,7 +73,7 @@
 
         $sql = mysqli_query($connect, "SELECT * FROM `user_table` WHERE email='$email'");
         $query = mysqli_num_rows($sql);
-  	    $fetch = mysqli_fetch_assoc($sql);
+        $fetch = mysqli_fetch_assoc($sql);
 
         if(mysqli_num_rows($sql) <= 0){
             ?>
@@ -100,8 +100,8 @@
             $mail->SMTPSecure='tls';
 
             // h-hotel account
-            $mail->Username='190204105@aust.edu';
-            $mail->Password='austedu0152155)';
+            $mail->Username='elarncommunity2022@gmail.com';
+            $mail->Password='elarncommunity12345';
 
             // send by h-hotel email
             $mail->setFrom('email', 'Password Reset');
