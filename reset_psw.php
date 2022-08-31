@@ -1,77 +1,114 @@
 <?php session_start() ;
-include('connect/connection.php');
+include('dbConnection.php');
 ?>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- Required meta tags -->
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eLearn</title>
+    <meta name="description" content="">
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" href="Favicon.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
-    <title>Login Form</title>
-</head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-    <div class="container">
-        <a class="navbar-brand" href="#">Password Reset Form</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+<!-- icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-<main class="login-form">
-    <div class="cotainer">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Reset Your Password</div>
-                    <div class="card-body">
-                        <form action="#" method="POST" name="login">
 
-                            <div class="form-group row">
-                                <label for="password" class="col-md-4 col-form-label text-md-right">New Password</label>
-                                <div class="col-md-6">
-                                    <input type="password" id="password" class="form-control" name="password" required autofocus>
-                                    <i class="bi bi-eye-slash" id="togglePassword"></i>
-                                </div>
-                            </div>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                            <div class="col-md-6 offset-md-4">
-                                <input type="submit" value="Reset" name="reset">
-                            </div>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
+        <!-- NavBar -->
+        <span id="login"></span>
+
+
+    </head>
+    <body style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
+
+
+        
+
+
+
+  <script>  
+            function validation()  
+            {  
+                var id=document.f1.email.value;  
+                
+                if(id.length=="" ) {  
+                    alert("Email is empty");  
+                    return false;  
+                }  
+                                          
+            }  
+        </script>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Forget -->
+
+
+
+<span id="forget"></span>
+<div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover; padding-bottom: 20px;" id="container">
+<div class="row col pt-5 mt-5  container-fluid " >
+
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                    <!-- Tabs Titles -->
+
+                    <!-- Icon -->
+                    <div class="fadeIn first">
+                        <img src="images/logo.png" style="padding-bottom: 10px; padding-top: 15px;" id="icon" alt="User Icon" />
                     </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+                    <h5>Create Your Password</h5>
 
-</main>
-</body>
-</html>
+                    <!-- Login Form -->
+                    <form  action="#" method="POST" name="recover_psw   name="f1" autocomplete="off" onsubmit = "return validation()" >
+
+
+                        <input  type="password" id="email_address" class="form-control" name="password" required autofocus type="text" id="login" type="email" class="fadeIn second" name="email" placeholder="New Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px; margin-left: 33px;">
+                        
+                        
+                        <input type="submit" value="Reset" name="reset"  type="submit" value="Recover" name="recover" type="submit"  class="fadeIn fourth" >
+                    </form>
+                    
+
+                    <!-- Remind Passowrd -->
+                    <div id="formFooter"><p style="font-size: 15px; color: darkred; font-weight: bold;">
+
+
+
+
 <?php
     if(isset($_POST["reset"])){
-        include('connect/connection.php');
+       
         $psw = $_POST["password"];
 
         $token = $_SESSION['token'];
@@ -81,15 +118,20 @@ include('connect/connection.php');
 
         $sql = mysqli_query($connect, "SELECT * FROM user_table WHERE email='$Email'");
         $query = mysqli_num_rows($sql);
-  	    $fetch = mysqli_fetch_assoc($sql);
+        $fetch = mysqli_fetch_assoc($sql);
 
         if($Email){
             $new_pass = $psw;
             mysqli_query($connect, "UPDATE user_table SET password='$new_pass' WHERE email='$Email'");
+           echo "<b>Password Updated</b>"
+
             ?>
             <script>
-                window.location.replace("index.php");
+                
                 alert("<?php echo "your password has been succesful reset"?>");
+
+
+                window.location.replace("login.php");
             </script>
             <?php
         }else{
@@ -102,6 +144,39 @@ include('connect/connection.php');
     }
 
 ?>
+                        
+
+
+
+                    </p>
+                        <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="login.php">Log In?</a>
+                        <p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="registration.php">Register Here.</a></p>
+                    </div>
+
+            
+
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+        
+
+
+<?php include 'navbar.php' ?>
+<?php include 'footer.php' ?>
+
+<link rel="stylesheet" type="text/css" href="footer.css">
+            
+
+
+    </body>
+    </html>
+
+
+
+
 <script>
     const toggle = document.getElementById('togglePassword');
     const password = document.getElementById('password');
