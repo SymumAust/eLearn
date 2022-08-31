@@ -164,8 +164,8 @@
             $mail->SMTPSecure='tls';
 
             // h-hotel account
-            $mail->Username='elearncommunity2022@gmail.com';
-            $mail->Password='elarncommunity12345';
+            $mail->Username='190204105@aust.edu';
+            $mail->Password='austedu0152155)';
 
             // send by h-hotel email
             $mail->setFrom('email', 'Password Reset');
