@@ -1,7 +1,8 @@
-
+<?php session_start() ?>
    
-
- 
+<?php
+   include('dbConnection.php');
+ ?>
 
 
 
@@ -92,21 +93,11 @@
 					<h5>Reset Your Password</h5>
 
 					<!-- Login Form -->
-					<form  action="forget.php" name="f1" autocomplete="off" onsubmit = "return validation()" method = "POST">
-						<?php 
-							if($errors>0){
-								foreach ($errors as $displayErrors) {
-									// code...
-									?>
-									<div id="alert"><?php echo $displayErrors; ?></div>
-									<?php 
-
-								}
-							}
-						?>
-						<input type="text" id="login" type="email" class="fadeIn second" name="email" placeholder="E-mail" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
+					<form  action="#" method="POST" name="recover_psw   name="f1" autocomplete="off" onsubmit = "return validation()" >
 						
-						<input type="submit" name="forget_password"  class="fadeIn fourth" value="Check">
+						<input  type="text" id="email_address" class="form-control" name="email" required autofocus type="text" id="login" type="email" class="fadeIn second" name="email" placeholder="E-mail" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
+						
+						<input  type="submit" value="Recover" name="recover" type="submit"  class="fadeIn fourth">
 					</form>
 					<p style=" color: green ;font-size: 15px; font-weight: 300;">Enter your email address and we'll send you an email with instructions to reset your password.</p>
 
@@ -136,4 +127,79 @@
 
 	</body>
 	</html>
+
+
+
+	<?php 
+    if(isset($_POST["recover"])){
+        
+        $email = $_POST["email"];
+
+        $sql = mysqli_query($conn, "SELECT * FROM `user_table` WHERE email='$email'");
+        $query = mysqli_num_rows($sql);
+  	    $fetch = mysqli_fetch_assoc($sql);
+
+        if(mysqli_num_rows($sql) <= 0){
+            ?>
+            <script>
+                alert("<?php  echo "Sorry, no emails exists "?>");
+            </script>
+            <?php
+        }
+        else{
+            // generate token by binaryhexa 
+            $token = bin2hex(random_bytes(50));
+
+            //session_start ();
+            $_SESSION['token'] = $token;
+            $_SESSION['email'] = $email;
+
+            require "Mail/phpmailer/PHPMailerAutoload.php";
+            $mail = new PHPMailer;
+
+            $mail->isSMTP();
+            $mail->Host='smtp.gmail.com';
+            $mail->Port=587;
+            $mail->SMTPAuth=true;
+            $mail->SMTPSecure='tls';
+
+            // h-hotel account
+            $mail->Username='190204105@aust.edu';
+            $mail->Password='austedu0152155)';
+
+            // send by h-hotel email
+            $mail->setFrom('email', 'Password Reset');
+            // get email from input
+            $mail->addAddress($_POST["email"]);
+            //$mail->addReplyTo('lamkaizhe16@gmail.com');
+
+            // HTML body
+            $mail->isHTML(true);
+            $mail->Subject="Recover your password";
+            $mail->Body="<b>Dear User</b>
+            <h3>We received a request to reset your password.</h3>
+            <p>Kindly click the below link to reset your password</p>
+            http://localhost/project_eLearn/eLearn/reset_psw.php
+            <br><br>
+            <p>With regrads,</p>
+            <b>@eLearn Community </b>";
+
+            if(!$mail->send()){
+                ?>
+                    <script>
+                        alert("<?php echo " Invalid Email "?>");
+                    </script>
+                <?php
+            }else{
+                ?>
+                    <script>
+                        window.location.replace("notification.html");
+                    </script>
+                <?php
+            }
+        }
+    }
+
+
+?>
 
