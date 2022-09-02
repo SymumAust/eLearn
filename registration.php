@@ -1,5 +1,5 @@
 
-   
+   <?php session_start() ?>
 
  
 
@@ -109,13 +109,17 @@
 						<input type="text" id="email" class="fadeIn third" name="Email" placeholder="E-mail">
 						<input type="Password" id="pass" class="fadeIn third" name="Password" placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
 						<input type="Password" id="cpass" class="fadeIn third" name="Password1" placeholder="Confirm Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
-						<input type="submit" class="fadeIn fourth" value="Register" name="ok">
+						<input type="submit" class="fadeIn fourth" value="Register" name="register">
 					</form>
 
 					<!-- Remind Passowrd -->
 			<div id="formFooter">
 				<div><p style="font-size: 17px; color: red; font-weight: bold;">
+
+
 <?php 
+
+    
 
    $serverName = "127.0.0.1:3307";
     $userName = "root";
@@ -134,36 +138,100 @@
 
 
 
-if(isset($_REQUEST["ok"])){
-$Name = $_REQUEST['Name'];
-$Email = $_REQUEST['Email'];
-$pass = $_REQUEST['Password'];
-$pass1 = $_REQUEST['Password1'];
-
-if($pass === $pass1){
 
 
 
 
-	$sql = "INSERT INTO `user_table` (`username`, `password`, `email`) Values ('$Name','$pass', '$Email')";
+    if(isset($_POST["register"])){
+    	$Name = $_REQUEST['Name'];
+        $email = $_POST["Email"];
+        $password = $_POST["Password"];
+        $pass1 = $_POST['Password1'];
 
-	$result = mysqli_query($conn, $sql);
-	if(!$result){
-		echo "error".mysqli_error($conn);
+        if($password === $pass1){
 
 
-	}
-	else{
-		echo "Registration Successful";
-	}
-}
-else {
+
+
+
+
+
+
+        $check_query = mysqli_query($conn, "SELECT * FROM user_table where email ='$email'");
+        $rowCount = mysqli_num_rows($check_query);
+
+        if(!empty($email) && !empty($password)){
+            if($rowCount > 0){
+                ?>
+                <script>
+                    alert("User with email already exist!");
+                </script>
+                <?php
+            }else{
+                $password_hash = password_hash($password, PASSWORD_BCRYPT);
+
+                $result = mysqli_query($conn, "INSERT INTO `user_table` (`username`, `password`,`email` ,`Status`) VALUES ('$Name', '$password_hash','$email', 0)");
+               
+    
+                if($result){
+                    $otp = rand(100000,999999);
+                    $_SESSION['otp'] = $otp;
+					$_SESSION['mail'] = $email;
+                    require "Mail/phpmailer/PHPMailerAutoload.php";
+                    $mail = new PHPMailer;
+    
+                    $mail->isSMTP();
+                    $mail->Host='smtp.gmail.com';
+                    $mail->Port=587;
+                    $mail->SMTPAuth=true;
+                    $mail->SMTPSecure='tls';
+    
+                    $mail->Username='190204105@aust.edu';
+                    $mail->Password='aust12345_';
+    
+                    $mail->setFrom('email account', 'OTP Verification');
+                    $mail->addAddress($_POST["Email"]);
+    
+                    $mail->isHTML(true);
+                    $mail->Subject="Your verify code";
+                    $mail->Body="<p>Dear user, </p> <h3>Your verify OTP code is $otp <br></h3>
+                    <br><br>
+                    <p>With regrads,</p>
+                    <b>eLearn Community</b>
+                    ";
+    
+                            if(!$mail->send()){
+                                ?>
+                                    <script>
+                                        alert("<?php echo "Register Failed, Invalid Email "?>");
+                                    </script>
+                                <?php
+                            }else{
+                                ?>
+                                <script>
+                                    alert("<?php echo "Register Successfully, OTP sent to " . $email ?>");
+                                    window.location.replace('verification.php');
+                                </script>
+                                <?php
+                            }
+                }
+            }
+        }
+        else {
 	echo "Password not matched";
     // code...
+
+
+    }
+
+}
 }
 
 
-}
+
+
+
+
  ?>
 </p></div>
 						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="forget.php">Forgot Password?</a>
@@ -178,6 +246,7 @@ else {
 		</div>
 			<link rel="stylesheet" type="text/css" href="login.css">
 <link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="login.css">
 
 
 <?php include 'navbar.php' ?>

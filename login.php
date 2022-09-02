@@ -1,7 +1,5 @@
 
-   
 
- 
 
 
 
@@ -58,46 +56,75 @@
 					</div>
  
 					<!-- Login Form -->
-					<form  action="#" name="f1" onsubmit = "return validation()" method = "POST">
-						<input type="text" id="user" name="username" class="fadeIn second" name="login" placeholder="User">
-						<input type="Password" id="pass" name="password" class="fadeIn third" name="Password" placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
+					<form  action="#" name="f1" onsubmit = "return validation()" method = "POST" name="loggin">
+						<input   type="text" id="email_address" class="fadeIn second" name="email" placeholder="E-mail" required autofocus>
+						<input  type="password" id="password" class="form-control" name="password"  placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px; margin-left: 33px; "required>
 
 
 
-						<input type="submit" id="btn" class="fadeIn fourth" value="Log In">
+
+						<input type="submit" id="btn" class="fadeIn fourth" name="loggin" value="Log In">
 					</form>
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
 						<div><p style="font-size: 15px; color: darkred; font-weight: bold;">
-							<?php 
 
- 
 
-include 'dbConnection.php';
 
-if(isset($_POST['username'])){
+   
+<?php
+    include('dbConnection.php');
+
+
+
+  
+
+		if(isset($_POST["loggin"])){
+        $email = mysqli_real_escape_string($conn, trim($_POST['email']));
+
+        $password = trim($_POST['password']);
+        $sql = mysqli_query($conn, "SELECT * FROM user_table where email = '$email'");
+        $count = mysqli_num_rows($sql);
+
+            if($count > 0){
+                $fetch = mysqli_fetch_assoc($sql);
+                $hashpassword = $fetch["password"];
     
-    $uname=$_POST['username'];
-    $password=$_POST['password'];
-    
-    $sql="SELECT * from user_table where username='".$uname."' AND password='".$password."' limit 1";
-    
-    $result=mysqli_query($conn,$sql);
+                if($fetch["Status"] == 0){
+                    ?>
+                    <?php  
+                        echo "Please verify email account before login.";
+                    ?>
+                    <?php
+                }else if(password_verify($password, $hashpassword)){
+                    ?>
+                    <script>
+                        alert("login in successfully");
+                         window.location.replace('index.php');
 
+                    </script>
 
-if(mysqli_num_rows($result)===1 ){
-        echo " You Have Successfully Logged in";
-        header("Location: index.php");
-        exit();
+                    <?php
+                    
+                }else{
+                    ?>
+                   <?php  
+                        echo  "email or password invalid, please try again.";
+                    ?>
+                    <?php
+                }
+            }
+            else
+            	echo "Create account before login!!!";
+                
     }
-    else{
-        echo "Wrong username or password! try again";
-        
-    }
-        
-}
+
 ?>
+
+
+
+							
 						</p></div>
 						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="forget.php">Forgot Password?</a>
 						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="registration.php">Register Here.</a></p>
@@ -240,4 +267,5 @@ if(mysqli_num_rows($result)===1 ){
 
 	</body>
 	</html>
+
 

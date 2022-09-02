@@ -66,7 +66,8 @@
 </body>
 </html>
 <?php 
-    include('connect/connection.php');
+    include('dbConnection.php');
+
     if(isset($_POST["verify"])){
         $otp = $_SESSION['otp'];
         $email = $_SESSION['mail'];
@@ -79,11 +80,11 @@
            </script>
            <?php
         }else{
-            mysqli_query($connect, "UPDATE user_table SET status = 1 WHERE email = '$email'");
+            mysqli_query($conn, "UPDATE user_table SET Status = 1 WHERE email = '$email'");
             ?>
              <script>
                  alert("Verfiy account done, you may sign in now");
-                   window.location.replace("index.php");
+                   window.location.replace("login.php");
              </script>
              <?php
         }
