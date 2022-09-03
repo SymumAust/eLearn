@@ -81,6 +81,24 @@
   
 
 		if(isset($_POST["loggin"])){
+
+
+
+			if($_POST['email'] == 'admin')
+			{
+				$password = $_POST['password'];
+				$sql2 = mysqli_query($conn, "SELECT * FROM user_table where password = '$password'");
+				$count2 = mysqli_num_rows($sql2);
+
+				if($count2 > 0){
+                        		header('Location: admin/dash_admin.php');
+                        		exit();
+
+             }}
+
+
+
+
         $email = mysqli_real_escape_string($conn, trim($_POST['email']));
 
         $password = trim($_POST['password']);
@@ -101,9 +119,16 @@
                     ?>
                     <script>
                         alert("login in successfully");
-                         window.location.replace('index.php');
 
                     </script>
+                        <?php  
+                        	
+                        	
+                        		  header('Location: index.php');
+                        	
+
+                        ?>
+                       
 
                     <?php
                     
