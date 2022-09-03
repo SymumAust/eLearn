@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,82 +36,124 @@
 		<!-- NavBar -->
 		<span id="login"></span>
 
-		<div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b;">
-
-
-
-
-			<div class="col-md-4 ">
-
-
-				<nav class="navbar navbar-light ">
-					<div class="container-fluid">
-						<a class="navbar-brand" href="#">
-							<img src="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
-							eLearn</b>
-						</a>
-					</div>
-				</nav>
-
-
-			</div>
-			<div class="col-md-8" style="padding-left: 600px; text-align: right;" >
-
-
-				<nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
-				<div class="container-fluid">
-					<a class="navbar-brand" href="admin.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b> Dashboard</b></button></a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
-            </li>
-            
-
-            <li class="nav-item">
-              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Login</b></a>
-            </li>
-
-          </ul>
-					</div>
-				</nav>
-			</div>
-
-		</div>
 
 	</head>
 	<body style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
 
+
 		<!-- Login Panel -->
 		<span id="">
 
-		<div class="row col pt-5  container-fluid ">
+		<div class="row col pt-5 mt-5  container-fluid ">
 
 			<div class="wrapper fadeInDown">
-				<div id="formContent">
+				<div id="formContent" id="frm">
 					<!-- Tabs Titles -->
 
 					<!-- Icon -->
 					<div class="fadeIn first">
 						<img src="images/logo.png" style="padding-bottom: 10px; padding-top: 15px;" id="icon" alt="User Icon" />
 					</div>
-
+ 
 					<!-- Login Form -->
-					<form>
-						<input type="text" id="login" class="fadeIn second" name="login" placeholder="User">
-						<input type="Password" id="" class="fadeIn third" name="Password" placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
-						<input type="submit" class="fadeIn fourth" value="Log In">
+					<form  action="#" name="f1" onsubmit = "return validation()" method = "POST" name="loggin">
+						<input   type="text" id="email_address" class="fadeIn second" name="email" placeholder="E-mail" required autofocus>
+						<input  type="password" id="password" class="form-control" name="password"  placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px; margin-left: 33px; "required>
+
+
+
+
+						<input type="submit" id="btn" class="fadeIn fourth" name="loggin" value="Log In">
 					</form>
 
 					<!-- Remind Passowrd -->
 					<div id="formFooter">
-						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#forget">Forgot Password?</a>
-						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#Register">Register Here.</a></p>
-					</div>
+						<div><p style="font-size: 15px; color: darkred; font-weight: bold;">
 
+
+
+   
+<?php
+    include('dbConnection.php');
+
+
+
+  
+
+		if(isset($_POST["loggin"])){
+
+
+
+			if($_POST['email'] == 'admin')
+			{
+				$password = $_POST['password'];
+				$sql2 = mysqli_query($conn, "SELECT * FROM user_table where password = '$password'");
+				$count2 = mysqli_num_rows($sql2);
+
+				if($count2 > 0){
+                        		header('Location: admin/dash_admin.php');
+                        		exit();
+
+             }}
+
+
+
+
+        $email = mysqli_real_escape_string($conn, trim($_POST['email']));
+
+        $password = trim($_POST['password']);
+        $sql = mysqli_query($conn, "SELECT * FROM user_table where email = '$email'");
+        $count = mysqli_num_rows($sql);
+
+            if($count > 0){
+                $fetch = mysqli_fetch_assoc($sql);
+                $hashpassword = $fetch["password"];
+    
+                if($fetch["Status"] == 0){
+                    ?>
+                    <?php  
+                        echo "Please verify email account before login.";
+                    ?>
+                    <?php
+                }else if(password_verify($password, $hashpassword)){
+                    ?>
+                    <script>
+                        alert("login in successfully");
+
+                    </script>
+                        <?php  
+                        	
+                        	
+                        		  header('Location: index.php');
+                        	
+
+                        ?>
+                       
+
+                    <?php
+                    
+                }else{
+                    ?>
+                   <?php  
+                        echo  "email or password invalid, please try again.";
+                    ?>
+                    <?php
+                }
+            }
+            else
+            	echo "Create account before login!!!";
+                
+    }
+
+?>
+
+
+
+							
+						</p></div>
+						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="forget.php">Forgot Password?</a>
+						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="registration.php">Register Here.</a></p>
+					</div>
 			
 
 				</div>
@@ -115,10 +162,46 @@
 		</div>
 		
 </span>
-	
+
+
+
+
+  <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+
+
+
+
+
+
+
+
+
+
+	<!--
 		<!-- Registration -->
 		
-		<div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
+	<!--	<div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
 
 		<div class="row col pt-5  container-fluid ">
 <span id="Register">
@@ -129,13 +212,13 @@
 					<!-- Tabs Titles -->
 
 					<!-- Icon -->
-					<div class="fadeIn first">
+		<!--			<div class="fadeIn first">
 						<img src="images/logo.png" style="padding-bottom: 10px; padding-top: 15px;" id="icon" alt="User Icon" />
 					</div>
 
 					<!-- Login Form -->
 					<form>
-						<input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
+			<!--			<input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
 						<input type="text" id="" class="fadeIn third" name="E-mail" placeholder="E-mail">
 						<input type="Password" id="" class="fadeIn third" name="Password" placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
 						<input type="Password" id="" class="fadeIn third" name="Password" placeholder="Confirm Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
@@ -143,7 +226,7 @@
 					</form>
 
 					<!-- Remind Passowrd -->
-					<div id="formFooter">
+	<!--				<div id="formFooter">
 						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#forget">Forgot Password?</a>
 						<p class=""style="text-decoration: none; font-size: 15px">Already have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#login">Login Here.</a></p>
 					</div>
@@ -153,7 +236,13 @@
 			
 		</div>
 	</div>
+
+
+
+-->
 		<!-- Forget -->
+
+<!--
 
 <span id="forget"></span>
 <div style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover; padding-bottom: 20px;">
@@ -164,13 +253,13 @@
 					<!-- Tabs Titles -->
 
 					<!-- Icon -->
-					<div class="fadeIn first">
+			<!--		<div class="fadeIn first">
 						<img src="images/logo.png" style="padding-bottom: 10px; padding-top: 15px;" id="icon" alt="User Icon" />
 					</div>
 					<h5>Reset Your Password</h5>
 
 					<!-- Login Form -->
-					<form>
+				<!--	<form>
 						<input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px;">
 						
 						<input type="submit" class="fadeIn fourth" value="Submit">
@@ -178,7 +267,7 @@
 					<p style="font-size: 15px; font-weight: 300;">Enter your email address and we'll send you an email with instructions to reset your password.</p>
 
 					<!-- Remind Passowrd -->
-					<div id="formFooter">
+				<!--	<div id="formFooter">
 						<a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#">Log In?</a>
 						<p class=""style="text-decoration: none; font-size: 15px">Doesn't have an account?  <a class="underlineHover" style="text-decoration: none; font-size: 15px" href="#Register">Register Here.</a></p>
 					</div>
@@ -192,48 +281,10 @@
 
 	</div>
 		
+-->
 
-
-<footer>
-  <div class="footer-clean">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Legacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Careers</h3>
-                        <ul>
-                            <li><a href="#">Job openings</a></li>
-                            <li><a href="#">Employee success</a></li>
-                            <li><a href="#">Benefits</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Claimed by eLearn © 2022</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-</footer>
+<?php include 'navbar.php' ?>
+<?php include 'footer.php' ?>
 
 <link rel="stylesheet" type="text/css" href="footer.css">
 			
@@ -241,3 +292,5 @@
 
 	</body>
 	</html>
+
+

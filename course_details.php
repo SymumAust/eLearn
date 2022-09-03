@@ -98,7 +98,7 @@
                 
                 <div id="row" class="row ">
                     <div class="col-md-6">
-                      <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
+                     <a href="payment.php"> <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button></a>
                   </div>
                   <div class="col-md-6 ">
                    <span id="myspan"><b>$23</b></span>
