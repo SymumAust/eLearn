@@ -24,6 +24,7 @@
 ?>
 
 <?php include 'fetch.php'; ?>
+<?php include 'fetch_feedback.php'; ?>
 
 
 
@@ -542,61 +543,70 @@ echo '
         <div class="row" style="margin-top: 0px;">
 
             <div class="slideshow-container" style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-attachment: fixed ;background-size: cover; position: relative; font-weight: 800; padding-top: 0px;">
+               
+
+  <?php
+
+  $k=0;
+
+  while($k<ceil($i2/3)){
 
 
-                <div class="mySlides" >
-                    <div class="row">
+                ?>
+                    <div class="mySlides" >
+                         <div class="row" >
+
+                            <?php
+
+  
+                    $j2 = 0;
+
+                    while ($j2 < $k+3) {
+
+
+
+                           
+                        echo ' 
+                   
+
+                    
+                       
                         <div class="col-md-4 profile text-center">
                             <div class="img-box">
-                                <img  src="images/Symum.jpg" class="img-responsive" style="height: 150px ;
+                                <img  src="images/'. $products2[$j2]->imageFile.'" class="img-responsive" style="height: 150px ;
                                 width:150px; border-radius: 50%;">
                             </div>
-                            <h2>Md. Symum Hossain</h2>
-                            <h3>Student, AUST</h3>
-                            <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
+                            <h2>'. $products2[$j2]->name .'</h2>
+                            <h3>'. $products2[$j2]->occupation .'</h3>
+                            <p style="font-size: 15px; color: darkcyan; font-weight: 300;">'. $products2[$j2]->details .'</p>
                         </div>
-
-                        <div class="col-md-4 profile text-center">
-                            <div class="img-box">
-                                <img src="images/member2.jpg" class="img-responsive" style="height: 150px ;
-                                width:150px;border-radius: 50%;" >
-                            </div>
-                            <h2>Marzia Binta Monir</h2>
-                            <h3>Student, AUST</h3>
-                            <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
-                        </div>
-
-                        <div class="col-md-4 profile text-center">
-                            <div class="img-box">
-                                <img src="images/apu.jpg" class="img-responsive" style="height: 150px ;
-                                width:150px;border-radius: 50%;">
-                            </div>
-                            <h2>Marshia Mehjabin Lamisa</h2>
-                            <h3>Student, AUST</h3>
-                            <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
-                        </div>
-
-                    </div></div>
-
-                    <div class="mySlides">
-
-                        <div class="col-md-4 profile text-center">
-                            <div class="img-box">
-                                <img src="images/apu.jpg" class="img-responsive" style="height: 150px ;
-                                width:150px;border-radius: 50%;">
-                            </div>
-                            <h2>Marshia Mehjabin Lamisa</h2>
-                            <h3>Faculty, MIT</h3>
-                            <p style="font-size: 15px; color: darkcyan; font-weight: 300;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum</p>
-                        </div>
-
-
-
-                    </div>
+                          
 
 
 
 
+                       
+
+                       
+                  ';
+
+
+                        $j2++;
+
+}?>
+
+<?php
+
+$k++; ?>
+</div> 
+
+                  
+
+
+
+</div>
+<?php
+}?> 
 
 
 

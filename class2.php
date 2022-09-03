@@ -1,16 +1,18 @@
-<?php
-class pt
+<?php 
+
+
+
+class pp
 {
         // Properties
         public $id;
         public $imageFile;
-        public $title;
+        public $name;
+        public $occupation;
         public $details;
-        public $price;
     
         // Methods
     
 }
 
-
-?>
+ ?>
