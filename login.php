@@ -1,6 +1,6 @@
 
 
-
+<?php  	?>
 
 
 <!DOCTYPE html>
@@ -57,7 +57,7 @@
  
 					<!-- Login Form -->
 					<form  action="#" name="f1" onsubmit = "return validation()" method = "POST" name="loggin">
-						<input   type="text" id="email_address" class="fadeIn second" name="email" placeholder="E-mail" required autofocus>
+						<input   type="text" id="email_address" class="fadeIn second" name="email" placeholder="E-mail" value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES) : ''; ?>" required autofocus>
 						<input  type="password" id="password" class="form-control" name="password"  placeholder="Password" style="font-size: 15px; justify-content: center; width: 85%; text-align: center; height: auto; padding-bottom: 12px; padding-top: 12px; margin-bottom: 20px; border-style: unset; box-shadow: 1px 1px 1px skyblue; border-color: skyblue; border-radius: 3px; margin-left: 33px; "required>
 
 
@@ -76,74 +76,11 @@
 <?php
     include('dbConnection.php');
 
-
-
-  
-
-		if(isset($_POST["loggin"])){
+   
 
 
 
-			if($_POST['email'] == 'admin')
-			{
-				$password = $_POST['password'];
-				$sql2 = mysqli_query($conn, "SELECT * FROM user_table where password = '$password'");
-				$count2 = mysqli_num_rows($sql2);
-
-				if($count2 > 0){
-                        		header('Location: admin/dash_admin.php');
-                        		exit();
-
-             }}
-
-
-
-
-        $email = mysqli_real_escape_string($conn, trim($_POST['email']));
-
-        $password = trim($_POST['password']);
-        $sql = mysqli_query($conn, "SELECT * FROM user_table where email = '$email'");
-        $count = mysqli_num_rows($sql);
-
-            if($count > 0){
-                $fetch = mysqli_fetch_assoc($sql);
-                $hashpassword = $fetch["password"];
-    
-                if($fetch["Status"] == 0){
-                    ?>
-                    <?php  
-                        echo "Please verify email account before login.";
-                    ?>
-                    <?php
-                }else if(password_verify($password, $hashpassword)){
-                    ?>
-                    <script>
-                        alert("login in successfully");
-
-                    </script>
-                        <?php  
-                        	
-                        	
-                        		  header('Location: index.php');
-                        	
-
-                        ?>
-                       
-
-                    <?php
-                    
-                }else{
-                    ?>
-                   <?php  
-                        echo  "email or password invalid, please try again.";
-                    ?>
-                    <?php
-                }
-            }
-            else
-            	echo "Create account before login!!!";
-                
-    }
+include 'loginCode.php';
 
 ?>
 

@@ -55,7 +55,7 @@ display: flex;">
               margin-bottom: 20px;width: 400px;margin-top: 20px">
               
               
-              <input type="submit" name="submt" class="send-btn" value="Checkout" style="float: left;
+              <input type="submit" name="submt" class="send-btn" value="Submit" style="float: left;
               background-color: #525E75;
               color: #fff;
               border: none;

@@ -2,7 +2,7 @@
 
 
 
-
+<?php 	include 'dbConnection.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,24 +38,146 @@
 
 
 	</head>
-	<body style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
-<div class="col pt-5 mt-5">
+	<body style=>
+<div class="col pt-5 mt-5" style="background-image: url(images/background.jpg); background-repeat: no-repeat;background-attachment: fixed ;background-size: cover;">
+
+	<div class=" col pt-5 mt-5">
 
 	
 
-		<a href=""><button class="btn btn-primary">Add Course</button> </a> </br>
-		<a href=""><button class="btn btn-danger">Add Lesson</button> </a> </br>
-		<a href=""><button class="btn btn-primary">Messages</button> </a></br>
-		<a href=""><button class="btn btn-primary">Payment Details</button> </a></br>
-		<a href=""><button class="btn btn-primary">Feedback Details</button> </a> </br>
+		<a href="course_admin.php"><button class="btn btn-primary">Add Course</button> </a> 
+		<a href="addLesson.php"><button class="btn btn-danger">Add Lesson</button> </a> 
+	
+		
+		 
 
 </div>
 
+<h1 class="pt-5 mt-5">Message Details</h1>
+
+
+<?php 	
+
+
+include 'dbConnection.php';
+
+$sql = "SELECT Name, Email, Subject, Message FROM contact_table";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<table class = 'pt-5 mt-5'><tr><th>Name</th><th>Email</th><th>Subject</th><th>Message</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["Name"]. "</td><td>" . $row["Email"]. "</td><td>" . $row["Subject"]. "</td><td>". $row['Message']."</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+
+
+
+ ?>
+
+
+<h1 class="pt-5 mt-5">User Table</h1>
+
+ <?php 	
+
+
+
+
+$sql = "SELECT id, username, email FROM user_table";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<table class = 'pt-5 mt-5'><tr><th>id</th><th>Name</th><th>Email</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["id"]. "</td><td>" . $row["username"]. "</td><td>" . $row["email"]. "</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+
+
+ ?>
+ 
+
+ 
+
+
+
+
+		
+<h1 class="pt-5 mt-5">Payment Details</h1>
+
+<?php
+$sql = "SELECT m_id, email, price FROM m_table";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<table class = 'pt-5 mt-5'><tr><th>ID</th><th>Email</th><th>Price</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["m_id"]. "</td><td>" . $row["email"]. "</td><td>" . $row["price"]. "</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+
+?>
+     <style>
+        table {
+        	color:  darkred;
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+        }
+ 
+        h1 {
+            text-align: center;
+             color: #006600;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT',
+            ' Calibri', 'Trebuchet MS', 'sans-serif';
+        }
+ 
+        td {
+            background-color: #E4F5D4;
+            border: 1px solid black;
+        }
+ 
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+ 
+        td {
+            font-weight: lighter;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+</div>
 	
 
 <?php include 'navbar1.php' ?>
 </br>
-<?php include 'footer.php' ?>
+
 
 <link rel="stylesheet" type="text/css" href="footer.css">
 			

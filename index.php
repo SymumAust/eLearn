@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
     $serverName = "127.0.0.1:3307";
     $userName = "root";
@@ -24,7 +25,9 @@
 ?>
 
 <?php include 'fetch.php'; ?>
-<?php include 'fetch_feedback.php'; ?>
+<?php include 'fetch_feedback.php'; 
+include 'flag.php';?>
+
 
 
 
@@ -122,12 +125,14 @@
      <b style="font-size:40px; font-weight: strong;">Welcome to <b style="font-size:90px; color: #110c54; font-weight: strong; "><h1 style="">
       <a href="" class="typewrite" style="font-weight: strong; color:#023cfa; text-decoration: none; font-size: 65px; text-shadow: 1px 1px 2px #000000;" data-period="2000" data-type='[ "eLearn", "Virtual Study.", "Global Education.", "Develop your skill." ]'>
        <span class="wrap"></span>
-   </a>
+   </a></br>
+   <div class="col-md-6 ccontainer container-fluid pt-5 mt-5">
+    <a href="login.php"><button class="btn " style="width: 40%;">Join Now</button></a></div>
 </h1></b></b></p></div>
 
 <div class="col-md-6 ccontainer">
-    <img src="images/edu.jpg" style="width:100%; opacity:0.7">
-    <a href="login.php"><button class="btn" style="width: 40%;">Join Now</button></a>
+    <img src="images/edu.jpg" style="width:100%; opacity:1">
+    
 </div>
 <style type="text/css">
     
@@ -263,7 +268,7 @@
         echo "0 results";
     }
   echo $abc;
-   $conn->close(); ?>" class="img-fluid carousel-image" alt="">
+   ?>" class="img-fluid carousel-image" alt="">
                         </div>
                     </div>
 
@@ -463,6 +468,9 @@
                     $j = 0;
 
                     while ($j < 6) {
+                       
+
+
 
 
 
@@ -474,7 +482,7 @@ echo '
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
         <a href="course_details.php"><img class="card-img-top" src="images/'. $products[$j]->imageFile .'" style="height: 300px;" alt=""></a>
-        <div class="card-body" id="" style="">
+        <div class="card-body" id="" style=""><h6>Course ID: '.$j .' </h6>
           <h4 style="font-size: 30px;">
 '.$products[$j]->title.'</h4>
           <p class="card-text">'.$products[$j]->details.'</p>
@@ -483,7 +491,7 @@ echo '
           <div class="row">
 
             <div class="col-md-6">
-              <a href="course_details.php"><button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
+              <a href="pay.php"><button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> Purchase</b></button></a>
             </div>
             <div class="col-md-6">          <a href=""  style="{color:green;} :hover { color: skyblue; }; font-size: 25px; font-weight:bold;">Price'. $products[$j]->price.'$</a></div>
 
@@ -548,7 +556,8 @@ echo '
   <?php
 
   $k=0;
-
+  $j2 = 0;
+$l=3;
   while($k<ceil($i2/3)){
 
 
@@ -559,7 +568,7 @@ echo '
                             <?php
 
   
-                    $j2 = 0;
+                    
 
                     while ($j2 < $k+3) {
 
@@ -597,7 +606,8 @@ echo '
 
 <?php
 
-$k++; ?>
+$k++;
+$l=$l+2; ?>
 </div> 
 
                   
@@ -818,23 +828,7 @@ $k++; ?>
     </div>
 </div>
 <label class="text-center " style="justify-content: center; text-align: center; margin-left: 680px; font-weight: 500; color: green; font-family: arial-black;">
-<?php 
-
-   $serverName = "127.0.0.1:3307";
-    $userName = "root";
-    $password = "";
-    $database = "tabtest";
-
-    $conn = mysqli_connect($serverName, $userName, $password, $database);
-
-      if(!$conn){
-        die("Sorry: ".mysqli_connect_error());
-    }
-    else{
-
-    echo "";
-}
-
+<?php
 
 
 if(isset($_REQUEST["ok"])){
@@ -845,7 +839,7 @@ $Subject = $_REQUEST['subject'];
 $Message = $_REQUEST['message'];
 
 
-    $sql = "INSERT INTO `contact` (`Name`, `Email`, `Subject`, `Message`) Values ('$Name', '$Email','$Subject','$Message')";
+    $sql = "INSERT INTO `contact_table` (`Name`, `Email`, `Subject`, `Message`) Values ('$Name', '$Email','$Subject','$Message')";
 
     $result = mysqli_query($conn, $sql);
 if(!$result){

@@ -1,4 +1,9 @@
+  
+
   <!-- Navbar -->
+  <?php 
+
+  include 'flag.php'; ?>
                     <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; position: relative; overflow-y: hidden; position: fixed; top: 0;" >
 
 
@@ -23,7 +28,7 @@
 
           <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;>
           <div class="container-fluid">
-           <a class="navbar-brand" href="login.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Dashboard</b></button></a>
+           <a class="navbar-brand" href="user_dash.php"><button type="button" class="btn btn-primary" color: #7bb2e3><b>Dashboard</b></button></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +38,7 @@
               <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Feedback</b></a>
+              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Courses</b></a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#about" style="color: #7bb2e3"><b  style="color: #e4edce;">About</b></a>
@@ -44,7 +49,8 @@
           </li>
 
           <li class="nav-item">
-              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Login</b></a>
+              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Feed
+               </b></a>
           </li>
 
       </ul>

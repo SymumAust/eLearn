@@ -2,8 +2,8 @@
 
 include 'dbConnection.php';
 include 'fetch_image.php';
-include 'fetch.php';
-include 'fetchUserDetails.php';
+
+include 'fetch_my_c.php';
 
 
 
@@ -115,13 +115,13 @@ include 'fetchUserDetails.php';
 					</li>
 
 					<li>
-						<a href="#feed_back" style="text-decoration:none;"><span class="las la-inbox"></span>
+						<a href="user_dash.php" style="text-decoration:none;"><span class="las la-inbox"></span>
 							<span>Feedback</span></a>
 
 					</li>
 
 					<li>
-						<a href="my_course.php" style="text-decoration:none;"><span class="las la-file-invoice"></span>
+						<a href="my_course.php" style="text-decoration:none;" ><span class="las la-file-invoice"></span>
 							<span>My Courses</span></a>
 
 					</li>
@@ -150,51 +150,62 @@ include 'fetchUserDetails.php';
 	<div class="container-fluid pt-5 mt-5" style=" color:#7bb2e3 ;  justify-content: center;">
 
 		<div class="row container-fluid" style=" justify-content: center;">
-			<h1 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center; padding-top: 50px;">Feedback</h1>
-			<?php
-			if (isset($_POST['updateStuNameBtn'])) {
+			<h1 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center; padding-top: 50px;">My Course</h1>
+			    <?php
+                    $j = 0;
 
-				$img = $_POST['img'];
-				$name = $_POST['name'];
-				$occ = $_POST['occ'];
-				$feedback = $_POST['f_content'];
-
-
-				$query = "insert into feedback(imageFile,name,occupation,details)
-              values ('$img','$name','$occ','$feedback')";
-
-				mysqli_query($conn, $query);
-				echo "<p>successful</p>";
-			} else {
-			}
-
-			?>
-
-
-			<div class="col-sm-6 mt-5">
-				<form class="mx-5" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-					<input class="file-upload-input" type="file" name="img" accept="image/png,image/jpg,image/jpeg">
-
-					<div class="form-group">
-						<lebel for="stuName">Name</lebel></br>
-						<input type="text" class="form-control" id="stu_name" name="name" value="">
-					</div>
-
-					<div class="form-group">
-						<lebel for="stuocc">Occupation</lebel>
-						<input type="text" class="form-control" id="stuName" name="occ" value="">
-					</div>
-
-					<div class="form-group">
-						<lebel for="feedback">Feedback</lebel>
-						<textarea class="form-control" id="f_content" name="f_content" value=""></textarea>
-					</div>
+                    while ($j < $i) {
 
 
 
-					<input type="submit" class="btn btn-primary" name="updateStuNameBtn" value="send" style="margin-top:20px;" />
-				</form>
-			</div>
+
+
+echo '
+
+ 
+    <div class="col-sm-6 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="course_details.php"><img class="card-img-top" src="images/'. $m[$j]->imageFile .'" style="height: 300px;" alt=""></a>
+        <div class="card-body" id="" style="">
+          <h4 style="font-size: 30px;">
+'.$m[$j]->title.'</h4>
+          <p class="card-text">'.$m[$j]->details.'</p>
+
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <a href="course_details2.php"><button id="button"  name="view" style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
+            </div>
+            <div class="col-md-6">          <a href=""  style="{color:green;} :hover { color: skyblue; }; font-size: 25px; font-weight:bold;">Price'. $m[$j]->price.'$</a></div>
+
+   <style type="text/css">
+     .row a{
+      font-weight:bold;
+     }
+   </style>
+
+            <div class="col-12" style="padding-left: 20px; align-content: right; justify-content:right;"><div class="col-md-4" id="star">
+              <span></span>
+              <span class="fa fa-star checked"style="color: orange; font-size: 15px;"></span>
+              <span class="fa fa-star checked" style="color: orange;font-size: 15px;"></span>
+              <span class="fa fa-star checked"style="color: orange;font-size: 15px;"></span>
+              <span class="fa fa-star" style="font-size: 15px; "></span>
+              
+
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>';
+
+
+  $j++;
+
+}?>
+
+
+			
 
 
 

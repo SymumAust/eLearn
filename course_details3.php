@@ -116,6 +116,11 @@
     <div id="row" class="row" >
         <ul>
             <li>
+                <video width="320" height="240" controls autoplay>
+    <object data="movie.mp4" width="320" height="240">
+        <embed width="320" height="240" src="Priyanka Chopra - Exotic ft. Pitbull - YouTube.MP4">
+    </object>
+  </video>
                 <span class="num">1.</span>
                 <span class="name">Introduction</span>
                 <span style="margin-left:340px ;"><i class="bi bi-clock"  style="background: transparent;"></i></span>

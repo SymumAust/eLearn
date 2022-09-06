@@ -50,5 +50,5 @@ while ($row = mysqli_fetch_array($resultx)) {
 
         $i2++;
 }
-
+$i--;
 ?>

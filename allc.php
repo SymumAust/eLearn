@@ -73,11 +73,11 @@
 echo '
  
   
-    <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="col-sm-4  mb-2">
       <div class="card h-100">
-        <a href="course_details.php"><img class="card-img-top" src="images/'. $products[$j]->imageFile .'" style="height: 300px;" alt=""></a>
+        <a href="pay.php"><img class="card-img-top" src="images/'. $products[$j]->imageFile .'" style="height: 300px;" alt=""></a>
         <div class="card-body" id="" style="">
-          <h4 style="font-size: 30px;">
+          <h6>Course ID: '.$j .' </h6><h4 style="font-size: 30px;">
 '.$products[$j]->title.'</h4>
           <p class="card-text">'.$products[$j]->details.'</p>
 
@@ -85,7 +85,7 @@ echo '
           <div class="row">
 
             <div class="col-md-6">
-              <a href="course_details.php"><button id="button"  style="padding: 8px 35px; font-size: 20px; color: ;"><b> View</b></button></a>
+              <a href="pay.php"><button id="button"  name="view" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Purchase</b></button></a>
             </div>
             <div class="col-md-6">          <a href=""  style="{color:green;} :hover { color: skyblue; }; font-size: 25px; font-weight:bold;">Price'. $products[$j]->price.'$</a></div>
 

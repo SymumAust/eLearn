@@ -1,3 +1,13 @@
+
+
+<?php
+
+include 'dbConnection.php';
+include 'fetch_lesson.php';
+
+  ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,65 +31,12 @@
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="shortcut icon" href="images/logo.png" alt="logo" width="30" height="45" id="oop">
 
-    <div id="contentOfNav"class="row bg-secondary container-fluid" style="box-shadow: 5px 5px 10px #09253d; color: #08233b; ">
-
-
-
-
-       <div class="col-md-4 ">
-
-
-          <nav class="navbar navbar-light ">
-             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                   <img src="images/logo.png" alt="logo" width="30" height="45" style="padding-bottom: 12px;" class=""><b style="font-size: 30px; color: #7bb2e3">
-                   eLearn</b>
-               </a>
-           </div>
-       </nav>
-
-
-   </div>
-   <div class="col-md-8" style="padding-left: 400px;">
-
-
-      <nav class="navbar navbar-expand-lg navbar-light " style="font-size:15px; padding-top: 15px;">
-          <div class="container-fluid">
-             <a class="navbar-brand" href="#st"><button type="button" class="btn btn-primary" color: #7bb2e3><b> Dashboard</b></button></a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-             <ul class="navbar-nav">
-             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #7bb2e3"><b style="color:greenyellow;">Home</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team" style="color: #7bb2e3"><b style="color: #e4edce;">Team</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about" style="color: #7bb2e3"><b  style="color: #e4edce;">About</b></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #7bb2e3"><b  style="color: #e4edce;">Contact</b></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="login.php" style="color: #7bb2e3"><b  style="color: #e4edce;">Login</b></a>
-            </li>
-
-          </ul>        </div>
-    </nav>
-</div>
-
-</div>
-
+ 
 
 </head>
 <body id="main" style=""  >
 
-   <section class="main container-fluid " >
+   <section class="main container-fluid pt-5 mt-5" >
     <div class="c-head">
         <h1><b  style="text-decoration: overline;">Course Details</b></h1>
     </div>
@@ -95,14 +52,7 @@
                 <i class="bi bi-check" style="background: transparent;"></i><h6>Understand the technologies used in web development</h6>
                 <i class="bi bi-check" style="background: transparent;"></i><h6>Identify the tools used by web developers</h6><br>
 
-                
-                <div id="row" class="row ">
-                    <div class="col-md-6">
-                      <button id="button" style="padding: 8px 35px; font-size: 20px; color: ;"><b> Enroll</b></button>
-                  </div>
-                  <div class="col-md-6 ">
-                   <span id="myspan"><b>$23</b></span>
-               </div></div>
+               
                
 
 
@@ -115,34 +65,35 @@
    <div class="container-fluid">
     <div id="row" class="row" >
         <ul>
-            <li>
-                <span class="num">1.</span>
-                <span class="name">Introduction</span>
-                <span style="margin-left:340px ;"><i class="bi bi-clock"  style="background: transparent;"></i></span>
-                <span class="number">12:00</span>
 
-            </li>
-            <li>
-                <span class="num">2.</span>
-                <span class="name">What is HTML?</span>
-                <span style="margin-left:340px ;"><i class="bi bi-clock" style="background: transparent;"></i></span>
-                <span class="number" style="margin-right:45px ;">15:00</span>
 
-            </li>
-            <li>
-                <span class="num">3.</span>
-                <span class="name">CSS units</span>
-                <span style="margin-left: 350px ;"><i class="bi bi-clock" style="background: transparent;"></i></span>
-                <span class="number">20:00</span>
 
-            </li>
 
-            <li>
-                <span class="num">4.</span>
-                <span class="name">Introduction to ReactJS</span>
-                <span style="margin-left:255px ;"><i class="bi bi-clock" style="background: transparent;"></i></span>
-                <span class="number" style="margin-right:20px">25:00</span>
-            </li>
+
+            <?php
+                    $j = 0;
+                    $kk=1;
+
+                    while ($j < $i ) {
+
+                        echo '
+            <li><a href="video.php" style="text-decoration:none; color: darkred;">
+                <span class="num" name="na" method="post">'.$kk.'</span>
+                 <span class="name">'.$less[$j]->lesson_name.'</span>
+                <span style="align-text: right; margin-left:0px ;"><i class="bi bi-clock"  style="background: transparent;"></i></span>
+                <span class="number">'. rand()%10 .'.00</span></a>
+
+            </li>';
+            $j++;
+            $kk++;
+
+            if(isset($_POST['na'])){
+                $t = $kk;
+                $w = $_SESSION['kk'];
+            }
+
+        } ?>
+            
 
 
 
@@ -163,48 +114,8 @@
 
 <!-- Footer -->
 
-<div>
-  <footer>
-    <div class="footer-clean">
-      <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-4 col-md-3 item">
-              <h3>Services</h3>
-              <ul>
-                <li><a href="#">Web design</a></li>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Hosting</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4 col-md-3 item">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Legacy</a></li>
-        </ul>
-    </div>
-    <div class="col-sm-4 col-md-3 item">
-      <h3>Careers</h3>
-      <ul>
-        <li><a href="#">Job openings</a></li>
-        <li><a href="#">Employee success</a></li>
-        <li><a href="#">Benefits</a></li>
-    </ul>
-</div>
-<div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-  <p class="copyright">Claimed by eLearn © 2022</p>
-</div>
-</div>
-</div>
-</footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-</footer>
-</div>
+<?php include 'navbar.php'; ?>
+<?php include 'footer.php'; ?>
 
 
 

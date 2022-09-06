@@ -15,4 +15,16 @@ class pp
     
 }
 
+
+
+
+class cd
+{
+
+        public $lesson_id;
+        public $lesson_details;
+        public $lesson_name;
+        public $c_id;
+}
+
  ?>

@@ -1,9 +1,9 @@
 <?php 
-
+session_start();
 include 'dbConnection.php';
 include 'fetch_image.php';
 include 'fetch.php';
-include 'fetchUserDetails.php';
+
 
 
 
@@ -146,60 +146,7 @@ include 'fetchUserDetails.php';
 	
 
 	<!-- Feedback -->
-	<span id="feed_back"></span>
-	<div class="container-fluid pt-5 mt-5" style=" color:#7bb2e3 ;  justify-content: center;">
-
-		<div class="row container-fluid" style=" justify-content: center;">
-			<h1 style="text-decoration: overline; color: #7bb2e3; margin-bottom: 50px; text-align: center; padding-top: 50px;">Feedback</h1>
-			<?php
-			if (isset($_POST['updateStuNameBtn'])) {
-
-				$img = $_POST['img'];
-				$name = $_POST['name'];
-				$occ = $_POST['occ'];
-				$feedback = $_POST['f_content'];
-
-
-				$query = "insert into feedback(imageFile,name,occupation,details)
-              values ('$img','$name','$occ','$feedback')";
-
-				mysqli_query($conn, $query);
-				echo "<p>successful</p>";
-			} else {
-			}
-
-			?>
-
-
-			<div class="col-sm-6 mt-5">
-				<form class="mx-5" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-					<input class="file-upload-input" type="file" name="img" accept="image/png,image/jpg,image/jpeg">
-
-					<div class="form-group">
-						<lebel for="stuName">Name</lebel></br>
-						<input type="text" class="form-control" id="stu_name" name="name" value="">
-					</div>
-
-					<div class="form-group">
-						<lebel for="stuocc">Occupation</lebel>
-						<input type="text" class="form-control" id="stuName" name="occ" value="">
-					</div>
-
-					<div class="form-group">
-						<lebel for="feedback">Feedback</lebel>
-						<textarea class="form-control" id="f_content" name="f_content" value=""></textarea>
-					</div>
-
-
-
-					<input type="submit" class="btn btn-primary" name="updateStuNameBtn" value="send" style="margin-top:20px;" />
-				</form>
-			</div>
-
-
-
-		</div>
-	</div>
+	
 
 
 	
