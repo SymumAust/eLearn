@@ -26,7 +26,7 @@ session_start();
 
 <?php include 'fetch.php'; ?>
 <?php include 'fetch_feedback.php'; 
-include 'flag.php';?>
+?>
 
 
 
