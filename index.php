@@ -916,7 +916,7 @@ else {
 
 
  <?php 
-include 'navbar1.php';
+include 'navbar.php';
 
  ?>
 
