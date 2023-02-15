@@ -62,10 +62,12 @@ while ($row = mysqli_fetch_array($resultx)) {
 }
 
 
-
 $i--;
+<<<<<<< HEAD
 $_SESSION['ac']=  $less[0]->lession_details;
 
+=======
+>>>>>>> parent of c3d91e4 (DONE)
 
 
 ?>
