@@ -150,7 +150,14 @@
 
         if($password === $pass1){
 
-  $check_query = mysqli_query($conn, "SELECT * FROM user_table where email ='$email'");
+
+
+
+
+
+
+
+        $check_query = mysqli_query($conn, "SELECT * FROM user_table where email ='$email'");
         $rowCount = mysqli_num_rows($check_query);
 
         if(!empty($email) && !empty($password)){
@@ -180,7 +187,7 @@
                     $mail->SMTPSecure='tls';
     
                     $mail->Username='190204105@aust.edu';
-                    $mail->Password='austedu0152155)';
+                    $mail->Password='aust12345_';
     
                     $mail->setFrom('email account', 'OTP Verification');
                     $mail->addAddress($_POST["Email"]);

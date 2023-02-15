@@ -64,7 +64,7 @@ while ($row = mysqli_fetch_array($resultx)) {
 
 
 $i--;
-$_SESSION['ac']=  $less[0]->lession_details;
+$_SESSION['ac']=  $less[1]->lession_details;
 
 
 
