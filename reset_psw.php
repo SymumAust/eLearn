@@ -2,6 +2,7 @@
 
 ?>
 <?php
+
 include('dbConnection.php');
 ?>
 

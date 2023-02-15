@@ -70,7 +70,7 @@ include 'dbConnection.php';
                     <?php
                 }else if(password_verify($password, $hashpassword)){
                 	$pp=1;
-                	$_SESSION['vv']='1';
+                	
                 	$var_value =1;
                 	$_SESSION['varname'] = $var_value;
                 	
