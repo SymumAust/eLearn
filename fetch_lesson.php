@@ -64,7 +64,11 @@ while ($row = mysqli_fetch_array($resultx)) {
 
 $i--;
 <<<<<<< HEAD
+<<<<<<< HEAD
 $_SESSION['ac']=  $less[0]->lession_details;
+=======
+$_SESSION['ac']=  $less[1]->lession_details;
+>>>>>>> parent of 91b15fc (.need to change)
 
 =======
 >>>>>>> parent of c3d91e4 (DONE)
