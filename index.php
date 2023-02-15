@@ -26,7 +26,7 @@ session_start();
 
 <?php include 'fetch.php'; ?>
 <?php include 'fetch_feedback.php'; 
-include 'flag.php';?>
+?>
 
 
 
@@ -916,7 +916,7 @@ else {
 
 
  <?php 
-include 'navbar1.php';
+include 'navbar.php';
 
  ?>
 
