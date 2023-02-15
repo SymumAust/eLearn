@@ -150,7 +150,7 @@
             // generate token by binaryhexa 
             $token = bin2hex(random_bytes(50));
 
-           
+            //session_start ();
             $_SESSION['token'] = $token;
             $_SESSION['email'] = $email;
 
@@ -171,7 +171,8 @@
             $mail->setFrom('email', 'Password Reset');
             // get email from input
             $mail->addAddress($_POST["email"]);
-           
+            //$mail->addReplyTo('lamkaizhe16@gmail.com');
+
             // HTML body
             $mail->isHTML(true);
             $mail->Subject="Recover your password";

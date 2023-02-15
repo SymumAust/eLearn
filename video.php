@@ -6,9 +6,9 @@
 
 
 
-include 'dbConnection.php';
+ include 'dbConnection.php';
 include 'fetch_lesson.php';
-
+$cc = $_SESSION['play'];
 
 ?>
 
@@ -20,7 +20,7 @@ include 'fetch_lesson.php';
 <button onclick="pauseVid()" type="button">Pause Video</button><br> 
 
 <video id="myVideo" width="700" height="800">
-  <source src="images/<?php echo $_SESSION['ac'];
+  <source src="images/<?php echo $cc;
  ?>" type="video/mp4">
   <source src="" type="video/ogg">
   
